@@ -11,7 +11,15 @@ module.exports = {
     ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
     ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    ['script', {}, `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ae528eeefd4ffa3e939c859d17658e5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();`
+    ]
   ],
   serviceWorker: false,
   themeConfig: {
@@ -38,6 +46,10 @@ module.exports = {
       {
         text: 'Others',
         link: '/others/'
+      },
+      {
+        text: 'About Me',
+        link: '/about/'
       }
     ],
     sidebar: {
@@ -88,9 +100,16 @@ module.exports = {
           ]
         }
       ],
-      'basic': [
+      '/basic/': [
         {
           title: '基础知识',
+          collapsable: false,
+          children: []
+        }
+      ],
+      '/about/': [
+        {
+          title: 'About Me',
           collapsable: false,
           children: []
         }
