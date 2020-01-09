@@ -4,7 +4,7 @@ home: true
 heroText: Jerry的博客
 tagline: 一个前端工程师的自我修养
 actionText: Explore
-actionLink: /vue/start/
+actionLink: /vue/
 features:
 - title: 前端基础
   details: 前端基础大杂烩，包括很多前端相关(js, css, html, http)的零碎知识。
