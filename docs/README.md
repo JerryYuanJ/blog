@@ -7,9 +7,9 @@ actionText: Explore
 actionLink: /vue/
 features:
 - title: 前端基础
-  details: 前端基础大杂烩，包括很多前端相关(js, css, html, http)的零碎知识。
-- title: Vue2源码分析
-  details: 深入源码角度分析 Vue，理解其内部工作机制。
+  details: 前端基础大杂烩，包括前端相关(js, css, html, http)的零碎知识。
+- title: Vue.js 深度剖析
+  details: 分析 vue2 的源码；掌握 vue 开发技巧。
 - title: Webpack 指南
   details: 学习 Webpack 的各项配置，掌握 Webpack 的优化技巧。
 - title: 算法学习

@@ -1,7 +1,7 @@
 module.exports = {
   dest: 'dist',
   title: 'Jerry 个人博客',
-  description: 'Jerry\' blog',
+  description: 'Jerry\'s blog',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: `/manifest.json` }],
@@ -75,7 +75,12 @@ module.exports = {
         {
           title: '内置组件',
           collapsable: false,
-          children: []
+          children: [
+            ['components/keep-alive', 'keep-alive'],
+            ['components/transition', 'transition'],
+            ['components/transition-group', 'transition-group'],
+            ['components/async-component', '异步组件']
+          ]
         }
       ],
       '/webpack/': [
@@ -108,7 +113,20 @@ module.exports = {
         {
           title: '基础知识',
           collapsable: false,
-          children: []
+          children: [
+            ['base/module', '前端模块化'],
+            ['base/reduce', 'reduce方法详解']
+          ]
+        },
+        {
+          title: '模拟原生方法',
+          collapsable: false,
+          children: [
+            ['native/bind', '实现apply/call/bind'],
+            ['native/new', '实现new操作符'],
+            ['native/create', '实现Object.create()'],
+            ['native/promise', '实现Promise'],
+          ]
         }
       ],
       '/about/': [
