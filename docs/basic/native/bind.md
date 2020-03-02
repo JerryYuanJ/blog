@@ -149,7 +149,7 @@ Function.prototype.myBind = function(context) {
 
 ```
 
-其中这行`var ctx = this instanceof BoundFn ? this : context` 判断了当前是不是使用`new`来实例化对象的，关于`new`的介绍，可以参考[./new](实现new操作符)。如果是`new`的，那么就把`this`（也就是绑定后的对象，对应例子中的 PersonMyBound）作为函数的上下文，否则就用我们传入的`context`。
+其中这行`var ctx = this instanceof BoundFn ? this : context` 判断了当前是不是使用`new`来实例化对象的，关于`new`的介绍，可以参考[实现new操作符](./new)。如果是`new`的，那么就把`this`（也就是绑定后的对象，对应例子中的 PersonMyBound）作为函数的上下文，否则就用我们传入的`context`。
 我们来运行一下：
 
 ```js
