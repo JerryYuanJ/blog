@@ -109,17 +109,25 @@ module.exports = {
           title: 'Babel',
           collapsable: false,
           children: [
-            ['babel/', 'Babel使用']
+            ['babel/', 'Babel详解']
           ]
         }
       ],
       '/basic/': [
         {
-          title: '基础知识',
+          title: 'JavaScript',
           collapsable: false,
           children: [
-            ['base/module', '前端模块化'],
-            ['base/reduce', 'reduce方法详解']
+            ['base/js/module', '前端模块化'],
+            ['base/js/reduce', 'reduce方法详解'],
+            ['base/js/debounce-throttle', '函数节流和防抖'],
+          ]
+        },
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: [
+            ['base/css/box', '盒模型与BFC']
           ]
         },
         {

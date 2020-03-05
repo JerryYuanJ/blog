@@ -4,7 +4,7 @@
 
 我们知道，HTTP是无状态的协议，也就是说，如果你在访问某个网站，单从HTTP协议的角度来说，网站的服务器是不知道你的上一次请求情况的。但是我们很多场景都需要我们的服务器记住用户之前的某些操作，举个很常见的例子，当我们登陆淘宝时，浏览不同的页面，淘宝不会让我们重复的登陆，这就说明它记录下了我们的登陆状态。实现这个功能有很多种方式，其中一种就是**Cookie**机制。
 
-HTTP Cookie（也叫Web Cookie或浏览器Cookie）是服务器发送到用户浏览器并保存在本地的**一小块数据**，它会在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上。**Cookie 使基于无状态的HTTP协议记录稳定的状态信息成为了可能。**
+HTTP Cookie（也叫Web Cookie或浏览器Cookie）是服务器发送到用户浏览器并保存在本地的**一小块数据**，它会在浏览器下次再次发送请求时，**满足条件的情况下**，随着请求报文一并发送到服务器上。**Cookie 使基于无状态的HTTP协议记录稳定的状态信息成为了可能。**
 
 ## Cookie的简单使用
 
@@ -81,16 +81,36 @@ Set-Cookie: sid=123; Path=/test; Domain=www.test.com
 
 6. **SameSite**
 
-这是一个相对较新的属性了，我在写下这篇文章不久，Chrome浏览已经正式的将这个属性放到最新稳定版本中(v80.0.3987.87)了。其实这个属性早在Chrome51的时候就被引入了，它的初衷是为了阻止伪造的跨站点的Cookie请求。`SameSite`的值可以为下面的三个之一：
+这个属性早在Chrome51的时候就被引入了，它的初衷是为了阻止CSRF攻击。`SameSite`的值可以为下面的三个之一：
   
-  1. Lax
+1. Strict
 
-  2. Strict
+这是要求最严格的，完全禁止第三方Cookie，只有当前网页URL与请求目标一致，才会发送Cookie。这个属性带来的用户体验非常不好，举个例子，你登陆淘宝后，假设淘宝网给你的Cookie设置的是`SameSite=Strict`，这时候你点击网站的商品准备看看详情，Oops，你又得重新登陆才可以继续进行你的操作，因为跳转的时候，淘宝的Cookie是不会附带到请求上去的。
 
-  3. None
+2. Lax
 
-  浏览器会在同站请求、跨站请求下继续发送cookie。
+`Lax`的要求则没有这么严格，但是大部分情况下它也是不发送Cookie的，除非是一些导航到目标网址的`GET`请求。这里的重点是：`GET`方法，而且必须是可以造成顶级导航的`GET`方法，只有这样，`Lax`的Cookie才会被发送。
 
+关于什么是“造成顶级导航”，这里解释一下。资源可以通过`img`、`iframe`、`script`标签进行加载，这些都可以通过`GET`请求来获取，但是它们都不会造成顶级的导航改变。基本上，它们不会更改地址栏中的URL，所以它们发出的请求，都不会带上`Lax`的Cookie。可以参考下面的表格：
+
+|   请求类型   |                 示例代码                  | 发送的Cookie   |
+|-------------|:---------------------------------------:| --------------:|
+| Link        | `<a href="..."></a>`                    |    Normal, Lax |
+| Perender    | `<link rel="prerender" href=".."/>`     |    Normal, Lax |
+| Form GET    | `<form method="GET" action="...">`      |    Normal, Lax |
+| Form POST   | `<form method="POST" action="...">`     |    Normal      |
+|  iframe     | `<iframe src="..."></iframe>`           |    Normal      |
+| AJAX        | `$.get("...")`                          |    Normal      |
+| Image       | `<img src="...">`                       |    Normal      |
+
+3. None
+
+浏览器会在同站请求、跨站请求下继续发送cookie。不过最近由谷歌发出的提议，如果Cookie的`SameSite=None`，那么它必须包含`Secure`标记，比如：
+
+```yml
+Set-Cookie: widget_session=abc123; SameSite=None // 这是一个无效的Cookie
+Set-Cookie: widget_session=abc123; SameSite=None; Secure // 有效
+```
 
 ## Cookie的限制
 
@@ -104,9 +124,8 @@ Cookie的限制主要体现在以下几点：
 Cookie最早是用来作为客户端存储的一种手段的，但是随着[`Storage`API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)的兴起，我们已经不需要它来承担存储性的工作了。
 
 
-
-
 ### 参考资料
 - [HTTP Headers：Set-Cookie - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
 - [Cookies - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
 - [SameSite cookies explained](https://web.dev/samesite-cookies-explained/)
+- [Using the Same-Site Cookie Attribute to Prevent CSRF Attacks](https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/)
