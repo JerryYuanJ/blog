@@ -127,7 +127,8 @@ module.exports = {
           title: 'CSS',
           collapsable: false,
           children: [
-            ['base/css/box', '盒模型与BFC']
+            ['base/css/box', '盒模型与BFC'],
+            ['base/css/animation', 'CSS Animation-帧动画']
           ]
         },
         {
