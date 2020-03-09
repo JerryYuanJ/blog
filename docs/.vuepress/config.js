@@ -121,6 +121,7 @@ module.exports = {
             ['base/js/module', '前端模块化'],
             ['base/js/reduce', 'reduce方法详解'],
             ['base/js/debounce-throttle', '函数节流和防抖'],
+            ['base/js/request-animation-frame', 'requestAnimationFrame'],
           ]
         },
         {
@@ -132,13 +133,14 @@ module.exports = {
           ]
         },
         {
-          title: '模拟原生方法',
+          title: '手写js',
           collapsable: false,
           children: [
-            ['native/bind', '实现apply/call/bind'],
-            ['native/new', '实现new操作符'],
-            ['native/create', '实现Object.create()'],
-            ['native/promise', '实现Promise'],
+            ['base/js/bind', '实现apply/call/bind'],
+            ['base/js/new', '实现new操作符'],
+            ['base/js/create', '实现Object.create()'],
+            ['base/js/promise', '实现Promise'],
+            ['base/js/deep-clone', 'js实现深拷贝'],
           ]
         }
       ],
