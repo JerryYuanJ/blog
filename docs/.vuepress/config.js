@@ -118,6 +118,7 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
+            ['base/js/data-compare', '数据类型转换'],
             ['base/js/module', '前端模块化'],
             ['base/js/reduce', 'reduce方法详解'],
             ['base/js/debounce-throttle', '函数节流和防抖'],
@@ -129,7 +130,8 @@ module.exports = {
           collapsable: false,
           children: [
             ['base/css/box', '盒模型与BFC'],
-            ['base/css/animation', 'CSS Animation-帧动画']
+            ['base/css/animation', '帧动画-Animation'],
+            ['base/css/grid', '神奇的Grid系统'],
           ]
         },
         {
@@ -140,7 +142,7 @@ module.exports = {
             ['base/js/new', '实现new操作符'],
             ['base/js/create', '实现Object.create()'],
             ['base/js/promise', '实现Promise'],
-            ['base/js/deep-clone', 'js实现深拷贝'],
+            ['base/js/deep-clone', '实现深拷贝'],
           ]
         }
       ],

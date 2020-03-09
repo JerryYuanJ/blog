@@ -79,7 +79,7 @@ function run(ts) {
 
 对于不支持`requestAnimationFrame`的浏览器，我们可以采用如下方法实现向下兼容：
 
-```js {26,27,28,29,30}
+```js
 // Adapted from https://gist.github.com/paulirish/1579671 which derived from 
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
