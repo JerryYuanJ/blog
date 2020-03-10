@@ -40,20 +40,12 @@ module.exports = {
         link: '/basic/'
       },
       {
-        text: 'Vue',
-        link: '/vue/'
-      },
-      {
-        text: 'Webpack',
-        link: '/webpack/'
+        text: '前端工具&库',
+        link: '/tools/'
       },
       {
         text: 'HTTP',
         link: '/http/'
-      },
-      {
-        text: 'Others',
-        link: '/others/'
       },
       {
         text: 'About Me',
@@ -70,48 +62,43 @@ module.exports = {
           ]
         }
       ],
-      '/vue/': [
+      '/tools/': [
         {
-          title: 'API实现原理',
-          collapsable: false,
-          children: []
-        },
-        {
-          title: '内置组件',
+          title: 'Vue',
           collapsable: false,
           children: [
-            ['components/keep-alive', 'keep-alive'],
-            ['components/transition', 'transition'],
-            ['components/transition-group', 'transition-group'],
-            ['components/async-component', '异步组件']
-          ]
-        }
-      ],
-      '/webpack/': [
-        {
-          title: '使用',
-          collapsable: false,
+            ['vue/reactivity', '响应式原理'],
+            ['vue/keep-alive', 'keep-alive组件原理'],
+            ['vue/async-component', '异步组件原理']
+          ],
         },
         {
-          title: '优化',
+          title: 'Webpack',
           collapsable: false,
-        }
-      ],
-      '/others/': [
+          children: [
+            ['webpack/base', '基础配置'],
+            ['webpack/dev-server', 'devServer配置'],
+            ['webpack/optimize', 'Webpack优化技巧'],
+            ['webpack/tappable', '事件系统的核心-tappable'],
+            ['webpack/hashes', 'hash, chunkhas和contenthash'],
+            ['webpack/loader', 'Webpack Loader'],
+            ['webpack/plugin', 'Webpack Plugin'],
+          ]
+        },
         {
           title: 'Axios',
           collapsable: false,
           children: [
-            ['axios/', 'Axios源码分析']
+            ['others/axios/', 'Axios源码分析']
           ]
         },
         {
           title: 'Babel',
           collapsable: false,
           children: [
-            ['babel/', 'Babel详解']
+            ['others/babel/', 'Babel详解']
           ]
-        }
+        },
       ],
       '/basic/': [
         {
