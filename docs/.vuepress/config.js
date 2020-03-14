@@ -106,10 +106,12 @@ module.exports = {
           collapsable: false,
           children: [
             ['base/js/data-compare', '数据类型转换'],
-            ['base/js/module', '前端模块化'],
+            // ['base/js/oo', '面向对象编程'],
             ['base/js/reduce', 'reduce方法详解'],
-            ['base/js/debounce-throttle', '函数节流和防抖'],
+            ['base/js/fetch', 'fetch方法详解'],
             ['base/js/request-animation-frame', 'requestAnimationFrame'],
+            ['base/js/debounce-throttle', '函数节流和防抖'],
+            ['base/js/module', '前端模块化'],
           ]
         },
         {
@@ -122,14 +124,16 @@ module.exports = {
           ]
         },
         {
-          title: '手写js',
+          title: 'Coding With JS',
           collapsable: false,
           children: [
+            ['base/js/promise', '实现Promise'],
             ['base/js/bind', '实现apply/call/bind'],
             ['base/js/new', '实现new操作符'],
             ['base/js/create', '实现Object.create()'],
-            ['base/js/promise', '实现Promise'],
             ['base/js/deep-clone', '实现深拷贝'],
+            ['base/js/add-big-number', '实现大数相加'],
+            ['base/js/sleep', '实现sleep功能'],
           ]
         }
       ],
