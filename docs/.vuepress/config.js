@@ -119,8 +119,10 @@ module.exports = {
           collapsable: false,
           children: [
             ['base/css/box', '盒模型与BFC'],
-            ['base/css/animation', '帧动画-Animation'],
+            ['base/css/animation', '帧动画-Animation-详解'],
+            ['base/css/animation-demos', '帧动画-Animation-案例'],
             ['base/css/grid', '神奇的Grid系统'],
+            ['base/css/util', '⭐️CSS常用样式合集'],
           ]
         },
         {
