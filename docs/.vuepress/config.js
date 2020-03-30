@@ -112,6 +112,7 @@ module.exports = {
             ['base/js/request-animation-frame', 'requestAnimationFrame'],
             ['base/js/debounce-throttle', '函数节流和防抖'],
             ['base/js/module', '前端模块化'],
+            ['base/js/web-component', 'Web Component & Shadow DOM'],
           ]
         },
         {
