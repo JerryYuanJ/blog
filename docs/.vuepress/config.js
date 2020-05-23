@@ -38,7 +38,11 @@ module.exports = {
       },
       {
         text: '前端基础',
-        link: '/basic/'
+        items: [
+          { text: 'JavaScript', link: '/basic/js/index' },
+          { text: 'CSS', link: '/basic/css/index' },
+          { text: 'HTML', link: '/basic/html/index' }
+        ]
       },
       {
         text: '前端工具&库',
@@ -102,45 +106,56 @@ module.exports = {
           ]
         },
       ],
-      '/basic/': [
+      '/basic/js/': [
         {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            ['base/js/data-compare', '数据类型转换'],
+            ['data-compare', '数据类型转换'],
             // ['base/js/oo', '面向对象编程'],
-            ['base/js/reduce', 'reduce方法详解'],
-            ['base/js/fetch', 'fetch方法详解'],
-            ['base/js/request-animation-frame', 'requestAnimationFrame'],
-            ['base/js/debounce-throttle', '函数节流和防抖'],
-            ['base/js/module', '前端模块化'],
-            ['base/js/web-component', 'Web Component & Shadow DOM'],
-          ]
-        },
-        {
-          title: 'CSS',
-          collapsable: false,
-          children: [
-            ['base/css/box', '盒模型与BFC'],
-            ['base/css/animation', '帧动画-Animation-详解'],
-            ['base/css/animation-demos', '帧动画-Animation-案例'],
-            ['base/css/grid', '神奇的Grid系统'],
-            ['base/css/util', '⭐️CSS常用样式合集'],
+            ['reduce', 'reduce方法详解'],
+            ['fetch', 'fetch方法详解'],
+            ['request-animation-frame', 'requestAnimationFrame'],
+            ['debounce-throttle', '函数节流和防抖'],
+            ['module', '前端模块化'],
+            ['web-component', 'Web Component & Shadow DOM'],
           ]
         },
         {
           title: 'Coding With JS',
           collapsable: false,
           children: [
-            ['base/js/promise', '实现Promise'],
-            ['base/js/bind', '实现apply/call/bind'],
-            ['base/js/new', '实现new操作符'],
-            ['base/js/create', '实现Object.create()'],
-            ['base/js/deep-clone', '实现深拷贝'],
-            ['base/js/add-big-number', '实现大数相加'],
-            ['base/js/sleep', '实现sleep功能'],
+            ['promise', '实现Promise'],
+            ['bind', '实现apply/call/bind'],
+            ['new', '实现new操作符'],
+            ['create', '实现Object.create()'],
+            ['deep-clone', '实现深拷贝'],
+            ['add-big-number', '实现大数相加'],
+            ['sleep', '实现sleep功能'],
           ]
         }
+      ],
+      '/basic/html/': [
+        {
+          title: 'HTML',
+          collapsable: false,
+          children: [
+
+          ]
+        },
+      ],
+      '/basic/css/': [
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: [
+            ['box', '盒模型与BFC'],
+            ['animation', '帧动画-Animation-详解'],
+            ['animation-demos', '帧动画-Animation-案例'],
+            ['grid', '神奇的Grid系统'],
+            ['util', '⭐️CSS常用样式合集'],
+          ]
+        },
       ],
       '/http/': [
         {
