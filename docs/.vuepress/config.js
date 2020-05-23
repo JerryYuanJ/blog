@@ -2,6 +2,7 @@ module.exports = {
   dest: 'dist',
   title: 'Jerry 个人博客',
   description: 'Jerry\'s blog',
+  temp: '.temp',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: `/manifest.json` }],
@@ -58,7 +59,8 @@ module.exports = {
           title: '算法',
           collapsable: false,
           children: [
-            ['subs', '获取子集']
+            ['subs', '获取子集'],
+            ['list-to-tree', '列表转成树结构']
           ]
         }
       ],
@@ -160,10 +162,28 @@ module.exports = {
       ],
       '/about/': [
         {
-          title: 'About Me',
+          title: '关于我',
           collapsable: false,
-          children: []
-        }
+          children: [
+            ['', '我是谁'],
+            ['/about/resume', '个人简历'],
+            ['/about/resume-en', 'Resume']
+          ]
+        },
+        {
+          title: 'Plans',
+          collapsable: false,
+          children: [
+            ['/about/plan', '2020 H2']
+          ],
+        },
+        {
+          title: '随记',
+          collapsable: true,
+          children: [
+            ['/about/plan', '12']
+          ],
+        },
       ]
     }
   }
