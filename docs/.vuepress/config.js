@@ -2,7 +2,7 @@ module.exports = {
   dest: 'dist',
   title: 'Jerry 个人博客',
   description: 'Jerry\'s blog',
-  temp: '.temp',
+  // temp: '.temp',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: `/manifest.json` }],
@@ -45,8 +45,12 @@ module.exports = {
         ]
       },
       {
-        text: '前端工具&库',
-        link: '/tools/'
+        text: '前端框架',
+        items: [
+          { text: 'Vue', link: '/tools/vue/index' },
+          { text: 'Webpack', link: '/tools/webpack/index' },
+          { text: 'Others', link: '/tools/others/index' },
+        ]
       },
       {
         text: 'HTTP',
@@ -68,41 +72,45 @@ module.exports = {
           ]
         }
       ],
-      '/tools/': [
+      '/tools/vue/': [
         {
           title: 'Vue',
           collapsable: false,
           children: [
-            ['vue/reactivity', '响应式原理'],
-            ['vue/keep-alive', 'keep-alive组件原理'],
-            ['vue/async-component', '异步组件原理']
+            ['reactivity', '响应式原理'],
+            ['keep-alive', 'keep-alive组件原理'],
+            ['async-component', '异步组件原理']
           ],
         },
+      ],
+      '/tools/webpack/': [
         {
-          title: 'Webpack',
+          title: 'webpack',
           collapsable: false,
           children: [
-            ['webpack/base', '基础配置'],
-            ['webpack/dev-server', 'devServer配置'],
-            ['webpack/optimize', 'Webpack优化技巧'],
-            ['webpack/tappable', '事件系统的核心-tappable'],
-            ['webpack/hashes', 'hash, chunkhas和contenthash'],
-            ['webpack/loader', 'Webpack Loader'],
-            ['webpack/plugin', 'Webpack Plugin'],
-          ]
+            ['base', '基础配置'],
+            ['dev-server', 'devServer配置'],
+            ['optimize', 'Webpack优化技巧'],
+            ['tappable', '事件系统的核心-tappable'],
+            ['hashes', 'hash, chunkhas和contenthash'],
+            ['loader', 'Webpack Loader'],
+            ['plugin', 'Webpack Plugin'],
+          ],
         },
+      ],
+      '/tools/others/': [
         {
           title: 'Axios',
           collapsable: false,
           children: [
-            ['others/axios/', 'Axios源码分析']
+            ['axios/', 'Axios源码分析']
           ]
         },
         {
           title: 'Babel',
           collapsable: false,
           children: [
-            ['others/babel/', 'Babel详解']
+            ['babel/', 'Babel详解']
           ]
         },
       ],

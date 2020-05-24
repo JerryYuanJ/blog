@@ -4,7 +4,7 @@ home: true
 heroText: Jerry的博客
 tagline: More than Front End ...
 actionText: Explore
-actionLink: /basic/js
+actionLink: /basic/js/
 features:
 - title: 前端基础
   details: JavaScript，CSS，HTML
