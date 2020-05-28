@@ -64,11 +64,29 @@ module.exports = {
     sidebar: {
       '/algorithm/': [
         {
-          title: '算法',
+          title: 'Easy',
           collapsable: false,
           children: [
-            ['subs', '获取子集'],
-            ['list-to-tree', '列表转成树结构']
+            ['easy/valid-parentheses', '有效的括号']
+          ]
+        },
+        {
+          title: 'Medium',
+          collapsable: false,
+          children: [
+            ['medium/find-longest-substr-length', '求最长子串的长度'],
+          ]
+        },
+        {
+          title: 'Hard',
+          collapsable: false,
+          children: []
+        },
+        {
+          title: 'Other',
+          collapsable: false,
+          children: [
+            ['other/list-to-tree', '列表转成树结构']
           ]
         }
       ],
@@ -77,10 +95,22 @@ module.exports = {
           title: 'Vue',
           collapsable: false,
           children: [
-            ['reactivity', '响应式原理'],
-            ['keep-alive', 'keep-alive组件原理'],
-            ['async-component', '异步组件原理']
+            ['vue/reactivity', '响应式原理'],
+            ['vue/keep-alive', 'keep-alive组件原理'],
+            ['vue/async-component', '异步组件原理']
           ],
+        },
+        {
+          title: 'Vuex',
+          collapsable: false,
+          children: [
+            ['vuex/01-install', '安装 Vuex'],
+          ],
+        },
+        {
+          title: 'VueRouter',
+          collapsable: false,
+          children: [],
         },
       ],
       '/tools/webpack/': [
