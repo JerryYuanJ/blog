@@ -104,7 +104,10 @@ module.exports = {
           title: 'Vuex',
           collapsable: false,
           children: [
-            ['vuex/01-install', '安装 Vuex'],
+            ['vuex/01-install', 'Vuex 的安装'],
+            ['vuex/02-state', 'State 工作原理'],
+            ['vuex/03-getter', 'Getter 工作原理'],
+            ['vuex/04-mutation', 'Mutation 工作原理'],
           ],
         },
         {
