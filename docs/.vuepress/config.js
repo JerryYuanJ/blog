@@ -49,6 +49,7 @@ module.exports = {
         items: [
           { text: 'Vue', link: '/tools/vue/index' },
           { text: 'Webpack', link: '/tools/webpack/index' },
+          { text: 'Snabbdom', link: '/tools/snabbdom/index' },
           { text: 'Others', link: '/tools/others/index' },
         ]
       },
@@ -115,6 +116,17 @@ module.exports = {
           collapsable: false,
           children: [],
         },
+      ],
+      '/tools/snabbdom/': [
+        {
+          title: 'Snabbdom',
+          collapsable: false,
+          children: [
+            ['01-vnode', '什么是 VNode'],
+            ['02-patch', '神奇的 patch'],
+            ['03-modules', '锦上添花的 modules'],
+          ],
+        }
       ],
       '/tools/webpack/': [
         {
