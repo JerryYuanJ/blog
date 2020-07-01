@@ -242,14 +242,14 @@ module.exports = {
           title: 'Plans',
           collapsable: false,
           children: [
-            ['/about/plan', '2020 H2']
+            ['/about/plan', '2020 下半年']
           ],
         },
         {
           title: '随记',
           collapsable: true,
           children: [
-            ['/about/plan', '12']
+            ['/about/2020-06', '2020-06']
           ],
         },
       ]

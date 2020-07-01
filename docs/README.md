@@ -9,7 +9,7 @@ features:
 - title: 前端基础
   details: JavaScript，CSS，HTML
 - title: Vue 源码解析
-  details: Vue2.x, Vue3.0, Vuex, Vue-Router, Vite ...
+  details: Vue 全家桶源码解析
 - title: Webpack 指南
   details: Webpack 配置与优化
 - title: LeeCode 之路
