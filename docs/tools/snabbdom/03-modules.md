@@ -694,7 +694,7 @@ setTimeout(() => {
 
 我们定义了两个事件：clickBefore 和 clickAfter，然后分别赋值给旧的和新的 vnode。看一下运行效果：
 
-<img src='../images/snabbdom-08-events.gif' style='border: 1px solid lightgrey' />
+<img src='../images/snabbdom-08-event.gif' style='border: 1px solid lightgrey' />
 
 一开始我们点击的时候，控制台打印的是 “click before”，三秒后再次点击，打印的是 “click after”。接下来我们来看看它是如何实现的。
 

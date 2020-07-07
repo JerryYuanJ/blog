@@ -125,6 +125,8 @@ module.exports = {
             ['01-vnode', '什么是 VNode'],
             ['02-patch', '神奇的 patch'],
             ['03-modules', '锦上添花的 modules'],
+            ['04-thunk', '优化 diff 的 thunks'],
+            ['05-others', 'Q&A'],
           ],
         }
       ],

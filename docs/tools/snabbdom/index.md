@@ -14,11 +14,4 @@ Snabbdom 是一个 **virtual DOM** 的实现库。它的实现非常简单，核
   - 强大的事件监听器功能。
   - thunk 函数可以进一步优化 diff 和 patch 过程。
 
-- 第三方功能
-  - snabbdom-pragma：使snabbdom支持JSX。
-  - snabbdom-to-html：使服务端（NodeJS）支持输出HTML。
-  - snabbdom-helpers：可以创建简洁的虚拟DOM。
-  - snabby：支持模板字符串。
-  - snabbdom-looks-like：支持虚拟DOM断言。
-
 本章我们就由浅入深的学习 snabbdom 的使用，并且从源码的角度作出详细的分析，读者看之前可以先根据 [官方仓库](https://github.com/snabbdom/snabbdom) 的文档自己上手一下这个库，了解它的基本使用。
