@@ -136,7 +136,7 @@ module.exports = {
           collapsable: false,
           children: [
             ['base', '基础配置'],
-            ['dev-server', 'devServer配置'],
+            ['dev-server', 'devServer 配置'],
             ['optimize', 'Webpack优化技巧'],
             ['tappable', '事件系统的核心-tappable'],
             ['hashes', 'hash, chunkhas和contenthash'],
