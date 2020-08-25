@@ -132,12 +132,26 @@ module.exports = {
       ],
       '/tools/webpack/': [
         {
-          title: 'webpack',
+          title: '配置大全',
           collapsable: false,
           children: [
-            ['base', '基础配置'],
-            ['dev-server', 'devServer 配置'],
+            ['watch', 'watch 和 watchOptions'],
+            ['entry-context', 'entry 和 context'],
+            ['dev-server', 'devServer'],
+            ['performance', 'performance'],
+          ],
+        },
+        {
+          title: '优化技巧',
+          collapsable: false,
+          children: [
             ['optimize', 'Webpack优化技巧'],
+          ],
+        },
+        {
+          title: '进阶学习',
+          collapsable: false,
+          children: [
             ['tappable', '事件系统的核心-tappable'],
             ['hashes', 'hash, chunkhas和contenthash'],
             ['loader', 'Webpack Loader'],

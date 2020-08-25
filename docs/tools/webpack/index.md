@@ -1,9 +1,7 @@
 webpack可以说是当前最流行的前端打包工具，本系列尽可能详细的带你了解webpack的方方面面，让你成为一名真正的 webpack 配置工程师 ～
 
-- [基础配置](./base.md)
-- [devServer 配置 - 提升你的开发体验](./dev-server.md)
-- [webpack 优化技巧](./optimize.md)
-- [认识 Tappable - webpack 核心事件系统](./tappable.md)
-- [hash、chunkhash和contenthash的区别](./hashes.md)
-- [Webpack Loader](./loader.md)
-- [Webpack Plugin](./plugin.md)
+:::tip
+本系列基于最新的 webpack5.0.0-beta.28 版本讲解。其实很多都和 v4 相似，但是 v5 新增了一些属性，删除了一些无用的属性配置。我会在具体介绍的时候提到。
+:::
+
+### 学完本系列，你就成为了一个无情的 webpack 配置工具人【狗头】
