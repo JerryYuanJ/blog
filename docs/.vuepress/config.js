@@ -139,6 +139,7 @@ module.exports = {
             ['entry-context', 'entry 和 context'],
             ['dev-server', 'devServer'],
             ['performance', 'performance'],
+            ['resolve', 'resolve 和 resolveLoader'],
           ],
         },
         {
