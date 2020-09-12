@@ -135,11 +135,12 @@ module.exports = {
           title: '配置大全',
           collapsable: false,
           children: [
-            ['watch', 'watch 和 watchOptions'],
-            ['entry-context', 'entry 和 context'],
             ['dev-server', 'devServer'],
             ['performance', 'performance'],
+            ['watch', 'watch 和 watchOptions'],
+            ['entry-context', 'entry 和 context'],
             ['resolve', 'resolve 和 resolveLoader'],
+            ['externals', 'externals 和 externalsType'],
           ],
         },
         {
@@ -259,7 +260,7 @@ module.exports = {
           title: 'Plans',
           collapsable: false,
           children: [
-            ['/about/plan', '2020 下半年']
+            // ['/about/plan', '2020 下半年']
           ],
         },
         {
