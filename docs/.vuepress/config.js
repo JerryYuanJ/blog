@@ -48,10 +48,14 @@ module.exports = {
         text: '前端框架',
         items: [
           { text: 'Vue', link: '/tools/vue/index' },
-          { text: 'Webpack', link: '/tools/webpack/index' },
+          // { text: 'Webpack', link: '/tools/webpack/index' },
           { text: 'Snabbdom', link: '/tools/snabbdom/index' },
           { text: 'Others', link: '/tools/others/index' },
         ]
+      },
+      {
+        text: 'Webpack',
+        link: '/tools/webpack/'
       },
       {
         text: 'HTTP',
@@ -135,12 +139,15 @@ module.exports = {
           title: '配置大全',
           collapsable: false,
           children: [
+            ['entry-context', 'entry 和 context'],
+            ['output', 'output'],
             ['dev-server', 'devServer'],
             ['performance', 'performance'],
             ['watch', 'watch 和 watchOptions'],
-            ['entry-context', 'entry 和 context'],
             ['resolve', 'resolve 和 resolveLoader'],
             ['externals', 'externals 和 externalsType'],
+            ['module', 'module'],
+            ['optimization', 'optimization'],
           ],
         },
         {
@@ -154,8 +161,8 @@ module.exports = {
           title: '进阶学习',
           collapsable: false,
           children: [
-            ['tappable', '事件系统的核心-tappable'],
-            ['hashes', 'hash, chunkhas和contenthash'],
+            ['tappable', '事件系统的核心 - Tappable'],
+            ['hashes', 'hash, chunkhash 和 contenthash'],
             ['loader', 'Webpack Loader'],
             ['plugin', 'Webpack Plugin'],
           ],
@@ -257,15 +264,17 @@ module.exports = {
           ]
         },
         {
-          title: 'Plans',
+          title: '好文共赏',
           collapsable: false,
           children: [
-            // ['/about/plan', '2020 下半年']
+            ['/about/articles-zh', '中文'],
+            ['/about/articles-en', 'English']
+
           ],
         },
         {
           title: '随记',
-          collapsable: true,
+          collapsable: false,
           children: [
             ['/about/2020-06', '2020-06']
           ],
