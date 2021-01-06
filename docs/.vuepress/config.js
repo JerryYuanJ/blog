@@ -48,9 +48,15 @@ module.exports = {
         text: '前端框架',
         items: [
           { text: 'Vue', link: '/tools/vue/index' },
-          // { text: 'Webpack', link: '/tools/webpack/index' },
           { text: 'Snabbdom', link: '/tools/snabbdom/index' },
           { text: 'Others', link: '/tools/others/index' },
+        ]
+      },
+      {
+        text: '技能拓展',
+        items: [
+          { text: 'Docker', link: '/backend/docker/index' },
+          { text: 'Nginx', link: '/backend/nginx/index' },
         ]
       },
       {
@@ -252,6 +258,16 @@ module.exports = {
             // csp ?
           ]
         }
+      ],
+      '/backend/docker/': [
+        {
+          title: 'Docker基础',
+          collapsable: false,
+          children: [
+            ['basic', '基本概念'],
+            ['commands', '常用命令'],
+          ],
+        },
       ],
       '/about/': [
         {
