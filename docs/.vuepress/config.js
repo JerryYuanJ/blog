@@ -54,10 +54,7 @@ module.exports = {
       },
       {
         text: '技能拓展',
-        items: [
-          { text: 'Docker', link: '/backend/docker/index' },
-          { text: 'Nginx', link: '/backend/nginx/index' },
-        ]
+        link: '/backend/'
       },
       {
         text: 'Webpack',
@@ -259,15 +256,23 @@ module.exports = {
           ]
         }
       ],
-      '/backend/docker/': [
+      '/backend/': [
         {
-          title: 'Docker基础',
+          title: 'Docker',
           collapsable: false,
           children: [
-            ['basic', '基本概念'],
-            ['commands', '常用命令'],
-          ],
+            ['docker/basic', '基本概念'],
+            ['docker/commands', '常用命令'],
+          ]
         },
+        {
+          title: 'Nginx',
+          collapsable: false,
+          children: [
+            ['nginx/guide', 'Hello Nginx'],
+            ['nginx/demo', '常用配置'],
+          ]
+        }
       ],
       '/about/': [
         {
