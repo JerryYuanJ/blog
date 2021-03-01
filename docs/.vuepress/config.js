@@ -14,7 +14,6 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['script', {}, `
-      var _mtac = {"senseQuery":1};
       (function() {
         var mta = document.createElement("script");
         mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
@@ -24,6 +23,18 @@ module.exports = {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(mta, s);
       })();
+    `],
+    ['script', {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    }],
+    ['style', {}, `
+      .tag {
+        padding: 4px 8px;
+        border-radius: 5px;
+        background: #548DCB;
+        color: white;
+        margin: 5px;
+      }
     `]
   ],
   serviceWorker: false,
@@ -297,7 +308,7 @@ module.exports = {
           title: '随记',
           collapsable: false,
           children: [
-            ['/about/2020-06', '2020-06']
+            ['/about/2021-plan', '2021年计划']
           ],
         },
       ]
