@@ -1,7 +1,7 @@
 <template>
   <div class="adsense-content">
     
-    <div style="padding: 0.5rem" ref="ad2">
+    <div style="padding: 2rem" ref="ad2">
     </div>
   </div>
 </template>
