@@ -52,15 +52,23 @@ module.exports = {
         items: [
           { text: 'JavaScript', link: '/basic/js/index' },
           { text: 'CSS', link: '/basic/css/index' },
-          { text: 'HTML', link: '/basic/html/index' }
+          { text: 'HTML', link: '/basic/html/index' },
+          { text: 'HTTP', link: '/http/index' }
         ]
       },
       {
-        text: '前端框架',
+        text: 'Vue 系列',
         items: [
-          { text: 'Vue', link: '/tools/vue/index' },
+          { text: 'Vue 2', link: '/tools/vue/vue2/index' },
+          { text: 'Vue 3', link: '/tools/vue/vue3/index' },
+          { text: 'Vuex', link: '/tools/vue/vuex/index' },
+        ]
+      },
+      {
+        text: '源码精读',
+        items: [
           { text: 'Snabbdom', link: '/tools/snabbdom/index' },
-          { text: 'Others', link: '/tools/others/index' },
+          { text: 'Axios', link: '/tools/axios/index' },
         ]
       },
       {
@@ -70,10 +78,6 @@ module.exports = {
       {
         text: 'Webpack',
         link: '/tools/webpack/'
-      },
-      {
-        text: 'HTTP',
-        link: '/http/'
       },
       {
         text: 'About Me',
@@ -109,30 +113,48 @@ module.exports = {
           ]
         }
       ],
-      '/tools/vue/': [
+      '/tools/vue/vue2/': [
         {
-          title: 'Vue',
+          title: 'Vue 2',
           collapsable: false,
           children: [
-            ['vue/reactivity', '响应式原理'],
-            ['vue/keep-alive', 'keep-alive组件原理'],
-            ['vue/async-component', '异步组件原理']
+            ['reactivity', '响应式原理'],
+            ['keep-alive', 'keep-alive组件原理'],
+            ['async-component', '异步组件原理']
+          ],
+        }
+      ],
+      '/tools/vue/vue3/': [
+        {
+          title: '初始化',
+          collapsable: false,
+          children: [
+            ['00-before', '写在前面'],
+            ['01-init-app', 'Vue 的初始化'],
           ],
         },
+        {
+          title: '组件化',
+          collapsable: false,
+          children: [
+            ['02-component-register', '组件注册'],
+            ['02-component-render', '组件渲染'],
+            ['02-component-lifecycle', '生命周期'],
+            ['02-component-async', '异步组件'],
+            ['02-component-internal', '内置组件'],
+          ]
+        }
+      ],
+      '/tools/vue/vuex/': [
         {
           title: 'Vuex',
           collapsable: false,
           children: [
-            ['vuex/01-install', 'Vuex 的安装'],
-            ['vuex/02-state', 'State 工作原理'],
-            ['vuex/03-getter', 'Getter 工作原理'],
-            ['vuex/04-mutation', 'Mutation 工作原理'],
+            ['01-install', 'Vuex 的安装'],
+            ['02-state', 'State 工作原理'],
+            ['03-getter', 'Getter 工作原理'],
+            ['04-mutation', 'Mutation 工作原理'],
           ],
-        },
-        {
-          title: 'VueRouter',
-          collapsable: false,
-          children: [],
         },
       ],
       '/tools/snabbdom/': [
@@ -146,6 +168,13 @@ module.exports = {
             ['04-thunk', '优化 diff 的 thunks'],
             ['05-others', 'Q&A'],
           ],
+        }
+      ],
+      '/tools/axios/': [
+        {
+          title: 'Axios',
+          collapsable: false,
+          children: [],
         }
       ],
       '/tools/webpack/': [
@@ -180,22 +209,6 @@ module.exports = {
             ['loader', 'Webpack Loader'],
             ['plugin', 'Webpack Plugin'],
           ],
-        },
-      ],
-      '/tools/others/': [
-        {
-          title: 'Axios',
-          collapsable: false,
-          children: [
-            ['axios/', 'Axios源码分析']
-          ]
-        },
-        {
-          title: 'Babel',
-          collapsable: false,
-          children: [
-            ['babel/', 'Babel详解']
-          ]
         },
       ],
       '/basic/js/': [
