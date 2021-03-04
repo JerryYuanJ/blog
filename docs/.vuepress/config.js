@@ -27,15 +27,15 @@ module.exports = {
     ['script', {
       src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     }],
-    ['style', {}, `
-      .tag {
-        padding: 4px 8px;
-        border-radius: 5px;
-        background: #548DCB;
-        color: white;
-        margin: 5px;
-      }
-    `]
+    // ['style', {}, `
+    //   .tag {
+    //     padding: 4px 8px;
+    //     border-radius: 5px;
+    //     background: #548DCB;
+    //     color: white;
+    //     margin: 5px;
+    //   }
+    // `]
   ],
   serviceWorker: false,
   themeConfig: {
@@ -137,8 +137,7 @@ module.exports = {
           title: '组件化',
           collapsable: false,
           children: [
-            ['02-component-register', '组件注册'],
-            ['02-component-render', '组件渲染'],
+            ['02-component-register-and-render', '组件注册与渲染'],
             ['02-component-lifecycle', '生命周期'],
             ['02-component-async', '异步组件'],
             ['02-component-internal', '内置组件'],
