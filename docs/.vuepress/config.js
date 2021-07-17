@@ -14,14 +14,12 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['script', {}, `
+      var _hmt = _hmt || [];
       (function() {
-        var mta = document.createElement("script");
-        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
-        mta.setAttribute("name", "MTAH5");
-        mta.setAttribute("sid", "500708667");
-        mta.setAttribute("cid", "500708668");
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(mta, s);
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ae528eeefd4ffa3e939c859d17658e5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
       })();
     `],
     ['script', {
@@ -82,6 +80,10 @@ module.exports = {
       {
         text: 'About Me',
         link: '/about/'
+      },
+      {
+        text: '✨内推',
+        link: '/jobs/'
       }
     ],
     sidebar: {
