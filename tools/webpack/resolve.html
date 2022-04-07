@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resolve 和 ResolveLoader | Jerry 个人博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/logo.png">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ae528eeefd4ffa3e939c859d17658e5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="Jerry's blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/blog/assets/css/0.styles.16f8281e.css" as="style"><link rel="preload" href="/blog/assets/js/app.1af4f67e.js" as="script"><link rel="preload" href="/blog/assets/js/14.69f023c0.js" as="script"><link rel="preload" href="/blog/assets/js/2.40c089a4.js" as="script"><link rel="preload" href="/blog/assets/js/100.5c26b91e.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.cddfd3f5.js"><link rel="prefetch" href="/blog/assets/js/101.faaf88d7.js"><link rel="prefetch" href="/blog/assets/js/102.7064d9c1.js"><link rel="prefetch" href="/blog/assets/js/11.d1d0449e.js"><link rel="prefetch" href="/blog/assets/js/12.339815e6.js"><link rel="prefetch" href="/blog/assets/js/13.fb627b38.js"><link rel="prefetch" href="/blog/assets/js/15.f841dba1.js"><link rel="prefetch" href="/blog/assets/js/16.1a7de72a.js"><link rel="prefetch" href="/blog/assets/js/17.fa224a6a.js"><link rel="prefetch" href="/blog/assets/js/18.f407a1f3.js"><link rel="prefetch" href="/blog/assets/js/19.0fd15645.js"><link rel="prefetch" href="/blog/assets/js/20.f03b26b5.js"><link rel="prefetch" href="/blog/assets/js/21.202c85be.js"><link rel="prefetch" href="/blog/assets/js/22.7985ca2e.js"><link rel="prefetch" href="/blog/assets/js/23.136061fb.js"><link rel="prefetch" href="/blog/assets/js/24.697fa3de.js"><link rel="prefetch" href="/blog/assets/js/25.35481409.js"><link rel="prefetch" href="/blog/assets/js/26.644b5387.js"><link rel="prefetch" href="/blog/assets/js/27.9609abfa.js"><link rel="prefetch" href="/blog/assets/js/28.bbb9cd06.js"><link rel="prefetch" href="/blog/assets/js/29.09eff0f8.js"><link rel="prefetch" href="/blog/assets/js/3.421ab81a.js"><link rel="prefetch" href="/blog/assets/js/30.39720434.js"><link rel="prefetch" href="/blog/assets/js/31.b3e38350.js"><link rel="prefetch" href="/blog/assets/js/32.54b0986d.js"><link rel="prefetch" href="/blog/assets/js/33.06378ca2.js"><link rel="prefetch" href="/blog/assets/js/34.3f84a094.js"><link rel="prefetch" href="/blog/assets/js/35.472136c8.js"><link rel="prefetch" href="/blog/assets/js/36.ba0ea7aa.js"><link rel="prefetch" href="/blog/assets/js/37.40dbe58f.js"><link rel="prefetch" href="/blog/assets/js/38.656437e7.js"><link rel="prefetch" href="/blog/assets/js/39.02121575.js"><link rel="prefetch" href="/blog/assets/js/4.5e22228f.js"><link rel="prefetch" href="/blog/assets/js/40.91d2ee25.js"><link rel="prefetch" href="/blog/assets/js/41.7efb9e40.js"><link rel="prefetch" href="/blog/assets/js/42.77ad6cb5.js"><link rel="prefetch" href="/blog/assets/js/43.d081e28d.js"><link rel="prefetch" href="/blog/assets/js/44.d09fb47f.js"><link rel="prefetch" href="/blog/assets/js/45.06b26613.js"><link rel="prefetch" href="/blog/assets/js/46.6682a04b.js"><link rel="prefetch" href="/blog/assets/js/47.a61c377c.js"><link rel="prefetch" href="/blog/assets/js/48.1f4bbd9a.js"><link rel="prefetch" href="/blog/assets/js/49.7f23a237.js"><link rel="prefetch" href="/blog/assets/js/5.1299b2e2.js"><link rel="prefetch" href="/blog/assets/js/50.2a56a559.js"><link rel="prefetch" href="/blog/assets/js/51.a36d0a14.js"><link rel="prefetch" href="/blog/assets/js/52.8204e775.js"><link rel="prefetch" href="/blog/assets/js/53.e8184b0c.js"><link rel="prefetch" href="/blog/assets/js/54.136290a5.js"><link rel="prefetch" href="/blog/assets/js/55.97d5b94f.js"><link rel="prefetch" href="/blog/assets/js/56.9b56e57d.js"><link rel="prefetch" href="/blog/assets/js/57.9029411f.js"><link rel="prefetch" href="/blog/assets/js/58.b8f7fe53.js"><link rel="prefetch" href="/blog/assets/js/59.947a3e20.js"><link rel="prefetch" href="/blog/assets/js/6.ebefac0f.js"><link rel="prefetch" href="/blog/assets/js/60.8513f893.js"><link rel="prefetch" href="/blog/assets/js/61.ca49c948.js"><link rel="prefetch" href="/blog/assets/js/62.0bd56b0e.js"><link rel="prefetch" href="/blog/assets/js/63.744e1002.js"><link rel="prefetch" href="/blog/assets/js/64.505a0f97.js"><link rel="prefetch" href="/blog/assets/js/65.544fcfac.js"><link rel="prefetch" href="/blog/assets/js/66.66866df6.js"><link rel="prefetch" href="/blog/assets/js/67.b894ab70.js"><link rel="prefetch" href="/blog/assets/js/68.fca7a887.js"><link rel="prefetch" href="/blog/assets/js/69.c1b521ce.js"><link rel="prefetch" href="/blog/assets/js/7.ad1d6601.js"><link rel="prefetch" href="/blog/assets/js/70.74dfd541.js"><link rel="prefetch" href="/blog/assets/js/71.e29e670f.js"><link rel="prefetch" href="/blog/assets/js/72.ed2a3264.js"><link rel="prefetch" href="/blog/assets/js/73.b3f34a8e.js"><link rel="prefetch" href="/blog/assets/js/74.9582a246.js"><link rel="prefetch" href="/blog/assets/js/75.2c1f22bc.js"><link rel="prefetch" href="/blog/assets/js/76.608cb3be.js"><link rel="prefetch" href="/blog/assets/js/77.84ef47a7.js"><link rel="prefetch" href="/blog/assets/js/78.764bb844.js"><link rel="prefetch" href="/blog/assets/js/79.ee5f1e88.js"><link rel="prefetch" href="/blog/assets/js/8.a3bdf67e.js"><link rel="prefetch" href="/blog/assets/js/80.0b0d61f7.js"><link rel="prefetch" href="/blog/assets/js/81.bcb1ed8e.js"><link rel="prefetch" href="/blog/assets/js/82.2c224139.js"><link rel="prefetch" href="/blog/assets/js/83.ceeabf7d.js"><link rel="prefetch" href="/blog/assets/js/84.35c40eba.js"><link rel="prefetch" href="/blog/assets/js/85.8957aac2.js"><link rel="prefetch" href="/blog/assets/js/86.b8f7c097.js"><link rel="prefetch" href="/blog/assets/js/87.2d6b3d45.js"><link rel="prefetch" href="/blog/assets/js/88.123d1fc9.js"><link rel="prefetch" href="/blog/assets/js/89.cb0744bd.js"><link rel="prefetch" href="/blog/assets/js/9.37b9ff2a.js"><link rel="prefetch" href="/blog/assets/js/90.dba0ef5e.js"><link rel="prefetch" href="/blog/assets/js/91.85ac0dcf.js"><link rel="prefetch" href="/blog/assets/js/92.ee2b547f.js"><link rel="prefetch" href="/blog/assets/js/93.4d803fdd.js"><link rel="prefetch" href="/blog/assets/js/94.ba97fcc6.js"><link rel="prefetch" href="/blog/assets/js/95.3f0e9127.js"><link rel="prefetch" href="/blog/assets/js/96.02ade836.js"><link rel="prefetch" href="/blog/assets/js/97.4d713111.js"><link rel="prefetch" href="/blog/assets/js/98.4787ec67.js"><link rel="prefetch" href="/blog/assets/js/99.088a9b4e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.16f8281e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Jerry 个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置大全</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/entry-context.html" class="sidebar-link">entry 和 context</a></li><li><a href="/blog/tools/webpack/output.html" class="sidebar-link">output</a></li><li><a href="/blog/tools/webpack/dev-server.html" class="sidebar-link">devServer</a></li><li><a href="/blog/tools/webpack/performance.html" class="sidebar-link">performance</a></li><li><a href="/blog/tools/webpack/watch.html" class="sidebar-link">watch 和 watchOptions</a></li><li><a href="/blog/tools/webpack/resolve.html" aria-current="page" class="active sidebar-link">resolve 和 resolveLoader</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#模块解析规则" class="sidebar-link">模块解析规则</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#绝对路径" class="sidebar-link">绝对路径</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#相对路径" class="sidebar-link">相对路径</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#模块路径" class="sidebar-link">模块路径</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#resolve-配置详解" class="sidebar-link">resolve 配置详解</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#alias-🔑" class="sidebar-link">alias 🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#aliasfields" class="sidebar-link">aliasFields</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#descriptionfiles-🔑" class="sidebar-link">descriptionFiles  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#enforceextension-🔑" class="sidebar-link">enforceExtension  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#extensions-🔑" class="sidebar-link">extensions  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#mainfields-🔑" class="sidebar-link">mainFields  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#mainfiles-🔑" class="sidebar-link">mainFiles  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#modules-🔑" class="sidebar-link">modules  🔑</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#unsafecache" class="sidebar-link">unsafeCache</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#cachewithcontext" class="sidebar-link">cacheWithContext</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#cachepredicate" class="sidebar-link">cachePredicate</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#restrictions" class="sidebar-link">restrictions</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/resolve.html#resolveloader-配置" class="sidebar-link">resolveLoader 配置</a></li></ul></li><li><a href="/blog/tools/webpack/externals.html" class="sidebar-link">externals 和 externalsType</a></li><li><a href="/blog/tools/webpack/module.html" class="sidebar-link">module</a></li><li><a href="/blog/tools/webpack/optimization.html" class="sidebar-link">optimization</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>优化技巧</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/optimize.html" class="sidebar-link">Webpack优化技巧</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶学习</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/tappable.html" class="sidebar-link">事件系统的核心 - Tappable</a></li><li><a href="/blog/tools/webpack/hashes.html" class="sidebar-link">hash, chunkhash 和 contenthash</a></li><li><a href="/blog/tools/webpack/loader.html" class="sidebar-link">Webpack Loader</a></li><li><a href="/blog/tools/webpack/plugin.html" class="sidebar-link">Webpack Plugin</a></li></ul></section></li></ul> <div class="adsense-content" data-v-8d82fd90><div style="padding: 2rem" data-v-8d82fd90></div></div></aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="resolve-和-resolveloader"><a href="#resolve-和-resolveloader" class="header-anchor">#</a> Resolve 和 ResolveLoader</h1> <p>这个属性可以修改模块的解析规则。关于模块的解析，可以参考这篇文章 <a href="https://webpack.js.org/concepts/module-resolution/" target="_blank" rel="noopener noreferrer">module resolution<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <h2 id="模块解析规则"><a href="#模块解析规则" class="header-anchor">#</a> 模块解析规则</h2> <p>这里我们对这个解析规则做一个简单的介绍。</p> <p>首先我们要知道，webpack 是有自己的默认路径解析规则的，这也是为什么我们在代码中使用 import，require 等语句请求另一个文件，webpack 能正确的加载出来的原因。<strong>解析器是根据资源的绝对路径去定位模块的。</strong> webpack 使用 <a href="https://github.com/webpack/enhanced-resolve" target="_blank" rel="noopener noreferrer">enhanced-resolve<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 作为解析器去<strong>解析模块路径</strong>，他的解析规则如下：</p> <h3 id="绝对路径"><a href="#绝对路径" class="header-anchor">#</a> 绝对路径</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'/home/workspace/util'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// or windows</span>
+<span class="token keyword">import</span> <span class="token string">'C:\\Users\\me\\file'</span><span class="token punctuation">;</span>
+</code></pre></div><p>由于我们已经拿到了绝对路径，这时候就不需要什么解析器去解析了。</p> <h3 id="相对路径"><a href="#相对路径" class="header-anchor">#</a> 相对路径</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'../src/util.js'</span>
+
+<span class="token keyword">import</span> <span class="token string">'./math.js'</span>
+</code></pre></div><p>将当前文件所在目录作为上下文，在根据相对路径的位置去解析对应的文件。</p> <h3 id="模块路径"><a href="#模块路径" class="header-anchor">#</a> 模块路径</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'module'</span>
+
+<span class="token keyword">import</span> <span class="token string">'module/file.js'</span>
+</code></pre></div><p>模块的搜索范围在 <strong>resolve.modules</strong> 中指定的所有目录中。你可以通过配置 <strong>resolve.alias</strong> 给一个模块起一个别名，然后通过这个别名引入这个模块，这里先有个印象，我们下文会具体介绍。</p> <p>当路径确认后，解析器会检查这个路径指向的是一个文件还是一个目录。</p> <p>如果指向一个文件的话，分这两种情况：</p> <ol><li>路径包含文件扩展名，则直接绑定到这个文件</li> <li>文件不包含扩展名的情况下，会采用 <strong>resolve.extensions</strong> 中的选项，逐一的去试探有没有对应扩展名的文件存在</li></ol> <p>如果指向一个目录的话，会按如下的流程去确定文件：</p> <ol><li>如果目录中包含 package.json 文件，那么会按顺序的搜索 resolve.mainFields 中的配置项，找到的第一个匹配项将会决定文件路径</li> <li>如果没有 package.json 文件，或者 resolve.mainFields 返回的不是一个有效路径，那么会去按顺序的查找 resolve.mainFiles 中的配置项，看在这个目录下能不能找一个匹配的文件</li> <li>根据 resolve.extensions 的配置解析文件。</li></ol> <p>如果你对 resolve 的配置不是很了解的话，那么你对上述表述的内容可能不是很清楚。没关系，接下来我们就来看看 resolve 的各项配置，相信你看完以后再来回顾，一定可以理解。</p> <h2 id="resolve-配置详解"><a href="#resolve-配置详解" class="header-anchor">#</a> resolve 配置详解</h2> <h3 id="alias-🔑"><a href="#alias-🔑" class="header-anchor">#</a> alias 🔑</h3> <p>配置模块的别名。看下面的栗子：</p> <p>如果不使用这个配置，我们引入某个文件可能要写上一连串的路径：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> utils <span class="token keyword">from</span> <span class="token string">'../../path/to/utils/'</span>
+</code></pre></div><p>这样的方式，不仅容易出错，而且一旦你变更了文件的路径，你就要去手动的修改引入模块的路径，很不方便。这时候，你就可以使用 alias 来配置：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      util<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'path/to/utils'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>有了这个配置，你可以直接在代码中通过：<code>import util from 'util'</code> 来使用这个模块的内容，相当方便！</p> <p>从 webpack 5 开始，它的值也可以是一个路径数组：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      util<span class="token operator">:</span> <span class="token punctuation">[</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'path/to/utils'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'path/to/another/utils'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你也可以让 webpack 不去解析这个模块路径，只要将它设置成 false 即可。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      util<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="精确匹配"><a href="#精确匹配" class="header-anchor">#</a> 精确匹配</h4> <p>你可以在 key 后面加上一个 $ 表示精确的匹配：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+      xyz$<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'path/to/file.js'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>得到的结果如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Test1 <span class="token keyword">from</span> <span class="token string">'xyz'</span><span class="token punctuation">;</span> <span class="token comment">// 正确匹配。这就相当于引入了 path/to/file.js 文件</span>
+<span class="token keyword">import</span> Test2 <span class="token keyword">from</span> <span class="token string">'xyz/file.js'</span><span class="token punctuation">;</span> <span class="token comment">// 匹配失败。会执行普通的文件解析。也就是会先去找 node_modules/xyz/file.js，在一级一级往上找。</span>
+</code></pre></div><p>更多的可以参考这张表：<a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank" rel="noopener noreferrer">resolve.alias<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="aliasfields"><a href="#aliasfields" class="header-anchor">#</a> aliasFields</h3> <p>指定要根据这个 <a href="https://github.com/defunctzombie/package-browser-field-spec" target="_blank" rel="noopener noreferrer">规范<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 解析的字段，比如 browser。一般我们很少会配置这个字段。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    aliasFields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'browser'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="descriptionfiles-🔑"><a href="#descriptionfiles-🔑" class="header-anchor">#</a> descriptionFiles  🔑</h3> <p>指定描述文件。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    descriptionFiles<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'package.json'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="enforceextension-🔑"><a href="#enforceextension-🔑" class="header-anchor">#</a> enforceExtension  🔑</h3> <p>强制使用后缀名。如果设置成 true 的话，那么你每个模块引入的代码都要带上后缀名，不然解析会报错。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enforceExtension<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="extensions-🔑"><a href="#extensions-🔑" class="header-anchor">#</a> extensions  🔑</h3> <p>要解析的文件的后缀名。如果你引入的文件没有提供后缀的话，那么会按顺序的尝试这里面的后缀，如果找到了，后面的都跳过。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.js'</span><span class="token punctuation">,</span> <span class="token string">'.jsx'</span><span class="token punctuation">,</span> <span class="token string">'.json'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>假设我有一个 Button.jsx 文件，但是我在其它文件中引入这个 Button 的时候这么引入的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'./src/components/Button'</span>
+</code></pre></div><p>那么解析器就会先找 src/components/Button.js，没找到，继续找 src/components/Button.jsx，找到了，Ok，结束。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>如果你配置了这个选项，那么意味这 webpack 默认的规则被你重写了。你项目中所有的文件引入都会使用这个规则去解析。</p></div> <h3 id="mainfields-🔑"><a href="#mainfields-🔑" class="header-anchor">#</a> mainFields  🔑</h3> <p>当从一个 npm 包中导入时，比如：<code>import Vue from 'vue'</code>，用 package.json 中哪个字段的值对应的文件，就是这个属性决定的。它的默认值跟你 webpack 配置的 target 有关：</p> <p>当 target 为 webworker，web，或者没有指定的时候，默认值为：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    mainFields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'browser'</span><span class="token punctuation">,</span> <span class="token string">'module'</span><span class="token punctuation">,</span> <span class="token string">'main'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>其它情况下为：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    mainFields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'module'</span><span class="token punctuation">,</span> <span class="token string">'main'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>举个栗子，我们常用的 vue.js 的 package.json 文件中有如下的配置：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/vue.runtime.common.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/vue.runtime.esm.js&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当我们使用 <code>import Vue from 'vue'</code> 的时候，在默认的 webpack 配置下，很显然会去找 module 对应的值，也就是我们的 dist/vue.runtime.esm.js 文件。因为 module 在数组的前面，优先级高。</p> <h3 id="mainfiles-🔑"><a href="#mainfiles-🔑" class="header-anchor">#</a> mainFiles  🔑</h3> <p>当解析到一个目录的时候，应该去找该目录下的哪个文件。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    mainFiles<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>比如你使用 <code>import { Button } from './components'</code> 的时候，它就会找 ./components/index.js 文件。</p> <h3 id="modules-🔑"><a href="#modules-🔑" class="header-anchor">#</a> modules  🔑</h3> <p>指定 webpack 解析模块时的搜索路径。</p> <p>他可以是一个相对路径，也可以是一个绝对路径。如果是相对路径的话，它会跟 Node 寻找 node_modules 一样，一层层的往上级找；如果是绝对路径的话，那么就直接在这个路径里面找。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    modules<span class="token operator">:</span> <span class="token punctuation">[</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'node_modules'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>注意，数组里的顺序也代表了查找的优先级。上面的定义表示，针对一个文件，先从 src 目录找（这是一个绝对路径），没找到的话再从 node_modules 找，还没找到的话再从 ../node_modules 找（这是相对路径，会逐层往上找），直到找到为止，否则报错找不到 module。</p> <h3 id="unsafecache"><a href="#unsafecache" class="header-anchor">#</a> unsafeCache</h3> <p>开启不安全的缓存（听着名字就不安全）。设置为 true 的话将会对所有模块做缓存，你也可以指定某个文件夹去单独做缓存。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// unsafeCache: true</span>
+    unsafeCache<span class="token operator">:</span> <span class="token regex">/src\/utilities/</span> <span class="token comment">// 只对 src/utilities 做缓存</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="cachewithcontext"><a href="#cachewithcontext" class="header-anchor">#</a> cacheWithContext</h3> <p>如果启用了 unsafeCache ，那么把 request.context 作为缓存的 key 包含进来。因为 webpack 3.1.0 的时候，当你配置了resolve 或 resolveLoader，那么 context 会在解析缓存的时候被忽略。这个选项是为了性能考虑加上的。</p> <h3 id="cachepredicate"><a href="#cachepredicate" class="header-anchor">#</a> cachePredicate</h3> <p>A function which decides whether a request should be cached or not. An object is passed to the function with path and request properties. It must return a boolean.</p> <p>这是一个函数，它决定着要不要对一个请求做缓存。函数有一个参数，它有 path 和 request 两个属性。函数必须返回一个布尔值，来决定缓存与否。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">cachePredicate</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">module</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token operator">/</span>node_modules<span class="token operator">/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>module<span class="token punctuation">.</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 只对 node_modules 下的做缓存</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="restrictions"><a href="#restrictions" class="header-anchor">#</a> restrictions</h3> <p>这个是 webpack5 新加的配置，用来限制解析的路径。比如你只想解析 js 文件和 css 文件的话，你可以这么配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    restrictions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex">/\.(js|css)$/</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>这样，你项目中任何解析到其它类型文件的时候，就会报错。</p> <h2 id="resolveloader-配置"><a href="#resolveloader-配置" class="header-anchor">#</a> resolveLoader 配置</h2> <p>resolveLoader 的配置和 resolve 一模一样，唯一不同的是它的作用对象是 loader。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolveLoader<span class="token operator">:</span> <span class="token punctuation">{</span>
+    modules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'node_modules'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src/my-loaders'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 指定从 node_modules 和 ./src/my-loaders 中解析 loader</span>
+    extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.js'</span><span class="token punctuation">,</span> <span class="token string">'.json'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    mainFields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'loader'</span><span class="token punctuation">,</span> <span class="token string">'main'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/27/2020, 2:34:26 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/tools/webpack/watch.html" class="prev">
+        watch 和 watchOptions
+      </a></span> <span class="next"><a href="/blog/tools/webpack/externals.html">
+        externals 和 externalsType
+      </a>
+      →
+    </span></p></div> <div class="adsense-content" data-v-5abe131a><div style="padding: 2rem 2rem 1rem 2rem" data-v-5abe131a></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.1af4f67e.js" defer></script><script src="/blog/assets/js/14.69f023c0.js" defer></script><script src="/blog/assets/js/2.40c089a4.js" defer></script><script src="/blog/assets/js/100.5c26b91e.js" defer></script>
+  </body>
+</html>

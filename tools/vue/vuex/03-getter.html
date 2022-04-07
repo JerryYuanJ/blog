@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Getters 详解 | Jerry 个人博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/logo.png">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ae528eeefd4ffa3e939c859d17658e5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="Jerry's blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/blog/assets/css/0.styles.16f8281e.css" as="style"><link rel="preload" href="/blog/assets/js/app.1af4f67e.js" as="script"><link rel="preload" href="/blog/assets/js/14.69f023c0.js" as="script"><link rel="preload" href="/blog/assets/js/2.40c089a4.js" as="script"><link rel="preload" href="/blog/assets/js/88.123d1fc9.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.cddfd3f5.js"><link rel="prefetch" href="/blog/assets/js/100.5c26b91e.js"><link rel="prefetch" href="/blog/assets/js/101.faaf88d7.js"><link rel="prefetch" href="/blog/assets/js/102.7064d9c1.js"><link rel="prefetch" href="/blog/assets/js/11.d1d0449e.js"><link rel="prefetch" href="/blog/assets/js/12.339815e6.js"><link rel="prefetch" href="/blog/assets/js/13.fb627b38.js"><link rel="prefetch" href="/blog/assets/js/15.f841dba1.js"><link rel="prefetch" href="/blog/assets/js/16.1a7de72a.js"><link rel="prefetch" href="/blog/assets/js/17.fa224a6a.js"><link rel="prefetch" href="/blog/assets/js/18.f407a1f3.js"><link rel="prefetch" href="/blog/assets/js/19.0fd15645.js"><link rel="prefetch" href="/blog/assets/js/20.f03b26b5.js"><link rel="prefetch" href="/blog/assets/js/21.202c85be.js"><link rel="prefetch" href="/blog/assets/js/22.7985ca2e.js"><link rel="prefetch" href="/blog/assets/js/23.136061fb.js"><link rel="prefetch" href="/blog/assets/js/24.697fa3de.js"><link rel="prefetch" href="/blog/assets/js/25.35481409.js"><link rel="prefetch" href="/blog/assets/js/26.644b5387.js"><link rel="prefetch" href="/blog/assets/js/27.9609abfa.js"><link rel="prefetch" href="/blog/assets/js/28.bbb9cd06.js"><link rel="prefetch" href="/blog/assets/js/29.09eff0f8.js"><link rel="prefetch" href="/blog/assets/js/3.421ab81a.js"><link rel="prefetch" href="/blog/assets/js/30.39720434.js"><link rel="prefetch" href="/blog/assets/js/31.b3e38350.js"><link rel="prefetch" href="/blog/assets/js/32.54b0986d.js"><link rel="prefetch" href="/blog/assets/js/33.06378ca2.js"><link rel="prefetch" href="/blog/assets/js/34.3f84a094.js"><link rel="prefetch" href="/blog/assets/js/35.472136c8.js"><link rel="prefetch" href="/blog/assets/js/36.ba0ea7aa.js"><link rel="prefetch" href="/blog/assets/js/37.40dbe58f.js"><link rel="prefetch" href="/blog/assets/js/38.656437e7.js"><link rel="prefetch" href="/blog/assets/js/39.02121575.js"><link rel="prefetch" href="/blog/assets/js/4.5e22228f.js"><link rel="prefetch" href="/blog/assets/js/40.91d2ee25.js"><link rel="prefetch" href="/blog/assets/js/41.7efb9e40.js"><link rel="prefetch" href="/blog/assets/js/42.77ad6cb5.js"><link rel="prefetch" href="/blog/assets/js/43.d081e28d.js"><link rel="prefetch" href="/blog/assets/js/44.d09fb47f.js"><link rel="prefetch" href="/blog/assets/js/45.06b26613.js"><link rel="prefetch" href="/blog/assets/js/46.6682a04b.js"><link rel="prefetch" href="/blog/assets/js/47.a61c377c.js"><link rel="prefetch" href="/blog/assets/js/48.1f4bbd9a.js"><link rel="prefetch" href="/blog/assets/js/49.7f23a237.js"><link rel="prefetch" href="/blog/assets/js/5.1299b2e2.js"><link rel="prefetch" href="/blog/assets/js/50.2a56a559.js"><link rel="prefetch" href="/blog/assets/js/51.a36d0a14.js"><link rel="prefetch" href="/blog/assets/js/52.8204e775.js"><link rel="prefetch" href="/blog/assets/js/53.e8184b0c.js"><link rel="prefetch" href="/blog/assets/js/54.136290a5.js"><link rel="prefetch" href="/blog/assets/js/55.97d5b94f.js"><link rel="prefetch" href="/blog/assets/js/56.9b56e57d.js"><link rel="prefetch" href="/blog/assets/js/57.9029411f.js"><link rel="prefetch" href="/blog/assets/js/58.b8f7fe53.js"><link rel="prefetch" href="/blog/assets/js/59.947a3e20.js"><link rel="prefetch" href="/blog/assets/js/6.ebefac0f.js"><link rel="prefetch" href="/blog/assets/js/60.8513f893.js"><link rel="prefetch" href="/blog/assets/js/61.ca49c948.js"><link rel="prefetch" href="/blog/assets/js/62.0bd56b0e.js"><link rel="prefetch" href="/blog/assets/js/63.744e1002.js"><link rel="prefetch" href="/blog/assets/js/64.505a0f97.js"><link rel="prefetch" href="/blog/assets/js/65.544fcfac.js"><link rel="prefetch" href="/blog/assets/js/66.66866df6.js"><link rel="prefetch" href="/blog/assets/js/67.b894ab70.js"><link rel="prefetch" href="/blog/assets/js/68.fca7a887.js"><link rel="prefetch" href="/blog/assets/js/69.c1b521ce.js"><link rel="prefetch" href="/blog/assets/js/7.ad1d6601.js"><link rel="prefetch" href="/blog/assets/js/70.74dfd541.js"><link rel="prefetch" href="/blog/assets/js/71.e29e670f.js"><link rel="prefetch" href="/blog/assets/js/72.ed2a3264.js"><link rel="prefetch" href="/blog/assets/js/73.b3f34a8e.js"><link rel="prefetch" href="/blog/assets/js/74.9582a246.js"><link rel="prefetch" href="/blog/assets/js/75.2c1f22bc.js"><link rel="prefetch" href="/blog/assets/js/76.608cb3be.js"><link rel="prefetch" href="/blog/assets/js/77.84ef47a7.js"><link rel="prefetch" href="/blog/assets/js/78.764bb844.js"><link rel="prefetch" href="/blog/assets/js/79.ee5f1e88.js"><link rel="prefetch" href="/blog/assets/js/8.a3bdf67e.js"><link rel="prefetch" href="/blog/assets/js/80.0b0d61f7.js"><link rel="prefetch" href="/blog/assets/js/81.bcb1ed8e.js"><link rel="prefetch" href="/blog/assets/js/82.2c224139.js"><link rel="prefetch" href="/blog/assets/js/83.ceeabf7d.js"><link rel="prefetch" href="/blog/assets/js/84.35c40eba.js"><link rel="prefetch" href="/blog/assets/js/85.8957aac2.js"><link rel="prefetch" href="/blog/assets/js/86.b8f7c097.js"><link rel="prefetch" href="/blog/assets/js/87.2d6b3d45.js"><link rel="prefetch" href="/blog/assets/js/89.cb0744bd.js"><link rel="prefetch" href="/blog/assets/js/9.37b9ff2a.js"><link rel="prefetch" href="/blog/assets/js/90.dba0ef5e.js"><link rel="prefetch" href="/blog/assets/js/91.85ac0dcf.js"><link rel="prefetch" href="/blog/assets/js/92.ee2b547f.js"><link rel="prefetch" href="/blog/assets/js/93.4d803fdd.js"><link rel="prefetch" href="/blog/assets/js/94.ba97fcc6.js"><link rel="prefetch" href="/blog/assets/js/95.3f0e9127.js"><link rel="prefetch" href="/blog/assets/js/96.02ade836.js"><link rel="prefetch" href="/blog/assets/js/97.4d713111.js"><link rel="prefetch" href="/blog/assets/js/98.4787ec67.js"><link rel="prefetch" href="/blog/assets/js/99.088a9b4e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.16f8281e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Jerry 个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vuex</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/vue/vuex/01-install.html" class="sidebar-link">Vuex 的安装</a></li><li><a href="/blog/tools/vue/vuex/02-state.html" class="sidebar-link">State 工作原理</a></li><li><a href="/blog/tools/vue/vuex/03-getter.html" aria-current="page" class="active sidebar-link">Getter 工作原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/vue/vuex/03-getter.html#getter-使用方法" class="sidebar-link">getter 使用方法</a></li><li class="sidebar-sub-header"><a href="/blog/tools/vue/vuex/03-getter.html#getter-实现原理" class="sidebar-link">getter 实现原理</a></li><li class="sidebar-sub-header"><a href="/blog/tools/vue/vuex/03-getter.html#mapgetters-使用方法" class="sidebar-link">mapGetters 使用方法</a></li><li class="sidebar-sub-header"><a href="/blog/tools/vue/vuex/03-getter.html#mapgetters-实现原理" class="sidebar-link">mapGetters 实现原理</a></li><li class="sidebar-sub-header"><a href="/blog/tools/vue/vuex/03-getter.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/blog/tools/vue/vuex/04-mutation.html" class="sidebar-link">Mutation 工作原理</a></li></ul></section></li></ul> <div class="adsense-content" data-v-8d82fd90><div style="padding: 2rem" data-v-8d82fd90></div></div></aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="getters-详解"><a href="#getters-详解" class="header-anchor">#</a> Getters 详解</h1> <h2 id="getter-使用方法"><a href="#getter-使用方法" class="header-anchor">#</a> getter 使用方法</h2> <p>其实 <code>getters</code> 很像我们在 <code>Vue</code> 中使用的<strong>计算属性</strong>，它的用法也很简单：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token operator">:</span> <span class="token punctuation">{</span>
+    firstName<span class="token operator">:</span> <span class="token string">'Jerry'</span><span class="token punctuation">,</span>
+    lastName<span class="token operator">:</span> <span class="token string">'Yuan'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">fullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>lastName
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>我们在 <code>Vue</code> 里面，可以这么来使用 <code>getters</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>fullname
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>是不是很简单。本节我们就来看看它的内部实现原理。</p> <h2 id="getter-实现原理"><a href="#getter-实现原理" class="header-anchor">#</a> getter 实现原理</h2> <p>还记得上一节我们分析 <code>state</code> 的时候，在 <code>Store</code> 构造函数里面会初始化一些内部的变量，其中有两个是跟 <code>getters</code> 相关的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span>_wrappedGetters <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>_makeLocalGettersCache <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+</code></pre></div><p>这两个一看就是跟 <code>getters</code> 相关的有木有！根据名字，我们看出来 <code>_wrappedGetters</code> 是一个包装了 <code>getters</code> 的对象，而 <code>_makeLocalGettersCache</code> 则是跟缓存相关的对象，本节我们分析不到这个变量。</p> <p>我们继续往下看，接着就到了我们之前介绍过的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">installModule</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> state<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_modules<span class="token punctuation">.</span>root<span class="token punctuation">)</span>
+</code></pre></div><p>这里面的逻辑我们就不啰嗦了，上一节都有介绍过，我们只看跟 <code>getters</code> 相关的逻辑即可。所以我们来看这一段代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> local <span class="token operator">=</span> module<span class="token punctuation">.</span>context <span class="token operator">=</span> <span class="token function">makeLocalContext</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> namespace<span class="token punctuation">,</span> path<span class="token punctuation">)</span>
+</code></pre></div><p>生成局部上下文时，会初始化我们的 <code>getters</code> 对象，我们来看一下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">makeLocalContext</span> <span class="token punctuation">(</span><span class="token parameter">store<span class="token punctuation">,</span> namespace<span class="token punctuation">,</span> path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> noNamespace <span class="token operator">=</span> namespace <span class="token operator">===</span> <span class="token string">''</span>
+  <span class="token keyword">const</span> local <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 省略 ...</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperties</span><span class="token punctuation">(</span>local<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token keyword">get</span><span class="token operator">:</span> noNamespace
+        <span class="token operator">?</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span><span class="token function-variable function">getters</span>
+        <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">makeLocalGetters</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> namespace<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    state<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">get</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">getNestedState</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">,</span> path<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> local
+</code></pre></div><p>我们给 <code>local</code> 扩充属性的时候，定义了一个 <code>getters</code>，它是一个函数，只有在调用的时候才会求值，是懒加载的一种实现。它返回的值是 <code>store.getters</code>。注意的是，这个 <code>makeLocalContext</code> 函数返回的值，是赋值给我们的<code>module.context</code> 的，在我们的例子中，也就是根模块 <code>store._modules.root</code>。我们继续看后面会对这个 <code>local</code> 做什么操作：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function">forEachGetter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">getter<span class="token punctuation">,</span> key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> namespacedType <span class="token operator">=</span> namespace <span class="token operator">+</span> key
+  <span class="token function">registerGetter</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> namespacedType<span class="token punctuation">,</span> getter<span class="token punctuation">,</span> local<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>这个 <code>module.forEachGetter</code> 方法是在 <code>module/module.js</code> 的 <code>Module</code> 类中定义的，很简单：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">forEachGetter</span> <span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>_rawModule<span class="token punctuation">.</span>getters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">forEachValue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>_rawModule<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> fn<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上一节我们分析过了，此时的 <code>this._rawModule</code> 对应的正是我们的 <code>options</code>，所以这里的 <code>getters</code> 是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token function">fullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> state<span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>lastName
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>所以会遍历这个 <code>getters</code> 对象，用 <code>fn</code> 函数操作它。这个 <code>forEachValue</code> 函数也很简单：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">forEachValue</span> <span class="token punctuation">(</span><span class="token parameter">obj<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">key</span> <span class="token operator">=&gt;</span> <span class="token function">fn</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>就是遍历这个对象的属性，然后用传入的函数来操作这些属性，属性值作为第一个参数，属性的 key 作为第二个参数，比如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">forEachValue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">'jerry'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span> key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token operator">&gt;&gt;</span> name jerry
+<span class="token operator">&gt;&gt;</span> <span class="token number">12</span> age
+</code></pre></div><p>其实对于这些工具函数，如果不知道它的意思，但是又想最快的知道它的用途，可以去对应的单元测试里面去看看，在 <code>test/unit/*</code> 下。这也是源码学习的一个技巧。</p> <p>好了，所以此时这个函数中： <code>module.forEachGetter((getter, key) =&gt; { ... })</code> 的参数 <code>getter</code> 是我们的函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> state<span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>lastName
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>key</code> 就是 <code>fullname</code> 了。其实看上去有点绕，但是实际上做的就是一件事，遍历 <code>getters</code>，用回调来处理里面的每一个属性和值。所以我们来看看回调中的这句代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">registerGetter</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> namespacedType<span class="token punctuation">,</span> getter<span class="token punctuation">,</span> local<span class="token punctuation">)</span>
+</code></pre></div><p>它的实现：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">registerGetter</span> <span class="token punctuation">(</span><span class="token parameter">store<span class="token punctuation">,</span> type<span class="token punctuation">,</span> rawGetter<span class="token punctuation">,</span> local</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>store<span class="token punctuation">.</span>_wrappedGetters<span class="token punctuation">[</span>type<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">[vuex] duplicate getter key: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  store<span class="token punctuation">.</span>_wrappedGetters<span class="token punctuation">[</span>type<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">wrappedGetter</span> <span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">rawGetter</span><span class="token punctuation">(</span>
+      local<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// local state</span>
+      local<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> <span class="token comment">// local getters</span>
+      store<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// root state</span>
+      store<span class="token punctuation">.</span>getters <span class="token comment">// root getters</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>很清晰。首先先检查有没有重复的定义 <code>getter</code>，如果有的话在开发环境下报错。如果没有定义过，那么就给 <code>store._wrappedGetters</code> 对象添加这个属性，它的 <code>key</code> 是我们的 <code>getter</code> 的名字，值是一个函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">wrappedGetter</span> <span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">rawGetter</span><span class="token punctuation">(</span>
+    local<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// local state</span>
+    local<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> <span class="token comment">// local getters</span>
+    store<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// root state</span>
+    store<span class="token punctuation">.</span>getters <span class="token comment">// root getters</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这个函数的参数是 <code>store</code>，函数只做了一件事，就是调用我们的 <code>rawGetter</code> 函数，并且给它填充几个参数，注释写的也很清晰，分别是局部 <code>state</code>，局部 <code>getters</code>，根 <code>state</code>，根 <code>getters</code>。所以我们在定义 <code>getter</code> 的时候，第一个参数是当前模块下的 <code>state</code>, 第二个参数是当前模块下的 <code>getter</code>,后面两个在模块下使用的，后续再说。</p> <p>到这里，我们就给 <code>store._wrappedGetters</code> 赋上了我们定义的 <code>getters</code> 了，继续回到 <code>Store</code> 的构造函数往下看：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">resetStoreVM</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span> state<span class="token punctuation">,</span> hot<span class="token punctuation">)</span>
+</code></pre></div><p>这个函数我们上一节分析过，不过是针对 <code>state</code> 的，这一节我们可以针对性的分析 <code>getter</code> 了，具体的逻辑在这里：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">resetStoreVM</span> <span class="token punctuation">(</span><span class="token parameter">store<span class="token punctuation">,</span> state<span class="token punctuation">,</span> hot</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> oldVm <span class="token operator">=</span> store<span class="token punctuation">.</span>_vm
+
+  <span class="token comment">// bind store public getters</span>
+  store<span class="token punctuation">.</span>getters <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token comment">// reset local getters cache</span>
+  store<span class="token punctuation">.</span>_makeLocalGettersCache <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> wrappedGetters <span class="token operator">=</span> store<span class="token punctuation">.</span>_wrappedGetters
+  <span class="token keyword">const</span> computed <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token function">forEachValue</span><span class="token punctuation">(</span>wrappedGetters<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// use computed to leverage its lazy-caching mechanism</span>
+    <span class="token comment">// direct inline function use will lead to closure preserving oldVm.</span>
+    <span class="token comment">// using partial to return function with only arguments preserved in closure environment.</span>
+    computed<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">partial</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> store<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">get</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>_vm<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      enumerable<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// for local getters</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> silent <span class="token operator">=</span> Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>silent
+  Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>silent <span class="token operator">=</span> <span class="token boolean">true</span>
+  store<span class="token punctuation">.</span>_vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    data<span class="token operator">:</span> <span class="token punctuation">{</span>
+      $$state<span class="token operator">:</span> state
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>silent <span class="token operator">=</span> silent
+  <span class="token comment">// 省略 ....</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以看到，我们遍历了包含 <code>getters</code> 的 <code>store._wrappedGetters</code> 对象，并且赋值给了 <code>computed</code> 对象，这个对象会作为 <code>Vue</code> 实例中的计算属性传入。我们来分析一下给计算属性赋值的过程：</p> <div class="language-js extra-class"><pre class="language-js"><code>computed<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">partial</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> store<span class="token punctuation">)</span>
+</code></pre></div><p>其中 <code>partial</code> 的定义：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">partial</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> arg</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">fn</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>所以，此时 <code>computed['fullname']</code> 的值是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">fn</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>思考一下，这里为什么用 <code>partial</code> 包一层呢？其实这也是一种懒加载的模式。因为我们返回的是一个函数，这个函数没被调用之前，它的内部是不确定的。即这个时候，<code>fn</code> 的值是未知的，得运行时才能确定。另外这里还考虑了行内函数引起的闭包的问题。</p> <p>此时，对 <code>Vue</code> 源码了解的同学应该知道，<strong>这个计算属性对应的 <code>computedWatcher</code> 的 <code>getter</code>属性其实就是上面这个函数。</strong> 这个我们后面对计算属性求值的时候会用到。</p> <p>接着，往 <code>store.getters</code> 中添加这个属性，它是只读的，它的值是 <code>store._vm[key]</code>。</p> <p>好了，现在我们的 <code>getters</code> 的初始化就完成了。相信这时候，你已经知道我们在页面使用 <code>this.$store.getters.fullname</code> 是如何获取到这个正确的值了吧。我们根据这个例子再走一遍流程吧。使用 <code>this.$store.getters.fullname</code> 获取 <code>fullname</code>，会触发 <code>get</code> 访问器，也就是这里定义的：</p> <div class="language-js extra-class"><pre class="language-js"><code>Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> key<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">get</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>_vm<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  enumerable<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// for local getters</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>出发了<strong>访问器</strong>后，会执行函数来获取值，这里的值就是 <code>store._vm['fullname']</code>，然而，<code>store._vm</code> 是一个 <code>Vue</code> 实例，访问它的属性会触发 <code>Vue</code> 的响应式系统获取值。这里会触发 <code>fullname</code> 对应的 <code>computedwatcher</code> 的求值，也就是会调用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">fn</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>这里的 <code>arg</code> 是我们的 <code>store</code>， <code>fn</code> 是一个包装函数，我们上面分析过了：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">wrappedGetter</span> <span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">rawGetter</span><span class="token punctuation">(</span>
+    local<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// local state</span>
+    local<span class="token punctuation">.</span>getters<span class="token punctuation">,</span> <span class="token comment">// local getters</span>
+    store<span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token comment">// root state</span>
+    store<span class="token punctuation">.</span>getters <span class="token comment">// root getters</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>所以最终会触发 <code>rawGetter</code> 这个函数的执行， <code>rawGetter</code> 其实就是我们的自己定义的获取函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> state<span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>lastName
+<span class="token punctuation">}</span>
+</code></pre></div><p>顺便提一下，在这个 <code>getter</code> 函数中使用 <code>state.firstName</code>  和 <code>state.lastName</code> 同样的会触发 <code>Vue</code> 的响应式系统，这个也就是之前分析过的 <code>state</code> 的取值过程。</p> <h2 id="mapgetters-使用方法"><a href="#mapgetters-使用方法" class="header-anchor">#</a> mapGetters 使用方法</h2> <p>跟 <code>state</code> 类似，我们的 <code>getters</code> 也有类似的 map 方法：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token operator">:</span> <span class="token punctuation">{</span>
+    firstName<span class="token operator">:</span> <span class="token string">'Jerry'</span><span class="token punctuation">,</span>
+    lastName<span class="token operator">:</span> <span class="token string">'Yuan'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">fullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>lastName
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">reversedFullname</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>lastName <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> state<span class="token punctuation">.</span>firstName
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  store<span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>Vuex<span class="token punctuation">.</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'fullname'</span><span class="token punctuation">,</span> <span class="token string">'reversedFullname'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>它的实现也很简单，有了上一节对 <code>mapState</code> 的理解，这里就很轻松了。</p> <h2 id="mapgetters-实现原理"><a href="#mapgetters-实现原理" class="header-anchor">#</a> mapGetters 实现原理</h2> <p>它的实现也在 <code>src/helper.js</code> 中：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Reduce the code which written in Vue.js for getting the getters
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} getters
+ * @return {Object}
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> mapGetters <span class="token operator">=</span> <span class="token function">normalizeNamespace</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">namespace<span class="token punctuation">,</span> getters</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">isValidMap</span><span class="token punctuation">(</span>getters<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'[vuex] mapGetters: mapper parameter must be either an Array or an Object'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">normalizeMap</span><span class="token punctuation">(</span>getters<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> key<span class="token punctuation">,</span> val <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// The namespace has been mutated by normalizeNamespace</span>
+    val <span class="token operator">=</span> namespace <span class="token operator">+</span> val
+    res<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">mappedGetter</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>namespace <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">getModuleByNamespace</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">,</span> <span class="token string">'mapGetters'</span><span class="token punctuation">,</span> namespace<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token punctuation">(</span>val <span class="token keyword">in</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">[vuex] unknown getter: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>val<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">[</span>val<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// mark vuex getter for devtools</span>
+    res<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>vuex <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>首先一开始，还是检查了 <code>getters</code> 的类型，如果不是数组或者对象的话，会在开发环境报一个错误。接着我们对 <code>getters</code> 做一次 <code>normalize</code>，然后在循环中对它的 <code>key</code> 和 <code>val</code> 做处理。它会我们的 <code>res</code> 对象添加属性，<code>key</code> 为 <code>getter</code> 的 <code>key</code>，值是一个 <code>mappedGetter</code> 的函数，我们来看一下这个内部的函数的实现：</p> <div class="language-js extra-class"><pre class="language-js"><code>res<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">mappedGetter</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>namespace <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">getModuleByNamespace</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">,</span> <span class="token string">'mapGetters'</span><span class="token punctuation">,</span> namespace<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token punctuation">(</span>val <span class="token keyword">in</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">[vuex] unknown getter: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>val<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">[</span>val<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>第一个判断是针对 <code>namespace</code> 的，这里我们不用管。第二个判断是如果没有找到对应的 <code>getter</code> 也会在开发环境给用户报错。找到的话，就直接返回这个 <code>this.$store.getters[val]</code>，也就是说，是直接通过 <code>key</code> 来访问 <code>this.$store.getters</code> 对象的。</p> <p>注意了，这里的 <code>this</code> 也是运行时绑定的，由于我们是在 <code>Vue</code> 实例中运行的，所以这里的 <code>this</code> 就是我们当前的 <code>Vue</code> 实例。</p> <p>最后返回 <code>res</code> 对象，包含我们需要的这些 <code>getters</code> 。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>本节我们介绍了 <code>getters</code> 和 <code>mapGetters</code> 的使用和实现原理，通过上面的分析可以看出，它其实是借用 <code>Vue</code> 的计算属性实现的。当我们访问一个 <code>getter</code> 的时候，实际上是访问了当前 <code>store</code> 中的 <code>_vm</code> 实例上的对应的计算属性，触发计算属性的求值，最后得出我们的 <code>getter</code> 的值。 然后关于 <code>mapGetters</code> 也和我们上一节介绍的 <code>mapState</code> 大同小异，主要是让开发者少写一点重复代码，内部的实现其实就是遍历传入的 <code>getters</code> 对象，然后依次给你转成 <code>getters</code> 的实现。下一节我们将介绍如何利用 <code>mutation</code> 来修改我们的 <code>state</code>。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/2/2020, 4:11:13 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/tools/vue/vuex/02-state.html" class="prev">
+        State 工作原理
+      </a></span> <span class="next"><a href="/blog/tools/vue/vuex/04-mutation.html">
+        Mutation 工作原理
+      </a>
+      →
+    </span></p></div> <div class="adsense-content" data-v-5abe131a><div style="padding: 2rem 2rem 1rem 2rem" data-v-5abe131a></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.1af4f67e.js" defer></script><script src="/blog/assets/js/14.69f023c0.js" defer></script><script src="/blog/assets/js/2.40c089a4.js" defer></script><script src="/blog/assets/js/88.123d1fc9.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>externals 和 externalsType | Jerry 个人博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/blog/logo.png">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ae528eeefd4ffa3e939c859d17658e5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="Jerry's blog">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/blog/assets/css/0.styles.16f8281e.css" as="style"><link rel="preload" href="/blog/assets/js/app.1af4f67e.js" as="script"><link rel="preload" href="/blog/assets/js/14.69f023c0.js" as="script"><link rel="preload" href="/blog/assets/js/2.40c089a4.js" as="script"><link rel="preload" href="/blog/assets/js/4.5e22228f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.cddfd3f5.js"><link rel="prefetch" href="/blog/assets/js/100.5c26b91e.js"><link rel="prefetch" href="/blog/assets/js/101.faaf88d7.js"><link rel="prefetch" href="/blog/assets/js/102.7064d9c1.js"><link rel="prefetch" href="/blog/assets/js/11.d1d0449e.js"><link rel="prefetch" href="/blog/assets/js/12.339815e6.js"><link rel="prefetch" href="/blog/assets/js/13.fb627b38.js"><link rel="prefetch" href="/blog/assets/js/15.f841dba1.js"><link rel="prefetch" href="/blog/assets/js/16.1a7de72a.js"><link rel="prefetch" href="/blog/assets/js/17.fa224a6a.js"><link rel="prefetch" href="/blog/assets/js/18.f407a1f3.js"><link rel="prefetch" href="/blog/assets/js/19.0fd15645.js"><link rel="prefetch" href="/blog/assets/js/20.f03b26b5.js"><link rel="prefetch" href="/blog/assets/js/21.202c85be.js"><link rel="prefetch" href="/blog/assets/js/22.7985ca2e.js"><link rel="prefetch" href="/blog/assets/js/23.136061fb.js"><link rel="prefetch" href="/blog/assets/js/24.697fa3de.js"><link rel="prefetch" href="/blog/assets/js/25.35481409.js"><link rel="prefetch" href="/blog/assets/js/26.644b5387.js"><link rel="prefetch" href="/blog/assets/js/27.9609abfa.js"><link rel="prefetch" href="/blog/assets/js/28.bbb9cd06.js"><link rel="prefetch" href="/blog/assets/js/29.09eff0f8.js"><link rel="prefetch" href="/blog/assets/js/3.421ab81a.js"><link rel="prefetch" href="/blog/assets/js/30.39720434.js"><link rel="prefetch" href="/blog/assets/js/31.b3e38350.js"><link rel="prefetch" href="/blog/assets/js/32.54b0986d.js"><link rel="prefetch" href="/blog/assets/js/33.06378ca2.js"><link rel="prefetch" href="/blog/assets/js/34.3f84a094.js"><link rel="prefetch" href="/blog/assets/js/35.472136c8.js"><link rel="prefetch" href="/blog/assets/js/36.ba0ea7aa.js"><link rel="prefetch" href="/blog/assets/js/37.40dbe58f.js"><link rel="prefetch" href="/blog/assets/js/38.656437e7.js"><link rel="prefetch" href="/blog/assets/js/39.02121575.js"><link rel="prefetch" href="/blog/assets/js/40.91d2ee25.js"><link rel="prefetch" href="/blog/assets/js/41.7efb9e40.js"><link rel="prefetch" href="/blog/assets/js/42.77ad6cb5.js"><link rel="prefetch" href="/blog/assets/js/43.d081e28d.js"><link rel="prefetch" href="/blog/assets/js/44.d09fb47f.js"><link rel="prefetch" href="/blog/assets/js/45.06b26613.js"><link rel="prefetch" href="/blog/assets/js/46.6682a04b.js"><link rel="prefetch" href="/blog/assets/js/47.a61c377c.js"><link rel="prefetch" href="/blog/assets/js/48.1f4bbd9a.js"><link rel="prefetch" href="/blog/assets/js/49.7f23a237.js"><link rel="prefetch" href="/blog/assets/js/5.1299b2e2.js"><link rel="prefetch" href="/blog/assets/js/50.2a56a559.js"><link rel="prefetch" href="/blog/assets/js/51.a36d0a14.js"><link rel="prefetch" href="/blog/assets/js/52.8204e775.js"><link rel="prefetch" href="/blog/assets/js/53.e8184b0c.js"><link rel="prefetch" href="/blog/assets/js/54.136290a5.js"><link rel="prefetch" href="/blog/assets/js/55.97d5b94f.js"><link rel="prefetch" href="/blog/assets/js/56.9b56e57d.js"><link rel="prefetch" href="/blog/assets/js/57.9029411f.js"><link rel="prefetch" href="/blog/assets/js/58.b8f7fe53.js"><link rel="prefetch" href="/blog/assets/js/59.947a3e20.js"><link rel="prefetch" href="/blog/assets/js/6.ebefac0f.js"><link rel="prefetch" href="/blog/assets/js/60.8513f893.js"><link rel="prefetch" href="/blog/assets/js/61.ca49c948.js"><link rel="prefetch" href="/blog/assets/js/62.0bd56b0e.js"><link rel="prefetch" href="/blog/assets/js/63.744e1002.js"><link rel="prefetch" href="/blog/assets/js/64.505a0f97.js"><link rel="prefetch" href="/blog/assets/js/65.544fcfac.js"><link rel="prefetch" href="/blog/assets/js/66.66866df6.js"><link rel="prefetch" href="/blog/assets/js/67.b894ab70.js"><link rel="prefetch" href="/blog/assets/js/68.fca7a887.js"><link rel="prefetch" href="/blog/assets/js/69.c1b521ce.js"><link rel="prefetch" href="/blog/assets/js/7.ad1d6601.js"><link rel="prefetch" href="/blog/assets/js/70.74dfd541.js"><link rel="prefetch" href="/blog/assets/js/71.e29e670f.js"><link rel="prefetch" href="/blog/assets/js/72.ed2a3264.js"><link rel="prefetch" href="/blog/assets/js/73.b3f34a8e.js"><link rel="prefetch" href="/blog/assets/js/74.9582a246.js"><link rel="prefetch" href="/blog/assets/js/75.2c1f22bc.js"><link rel="prefetch" href="/blog/assets/js/76.608cb3be.js"><link rel="prefetch" href="/blog/assets/js/77.84ef47a7.js"><link rel="prefetch" href="/blog/assets/js/78.764bb844.js"><link rel="prefetch" href="/blog/assets/js/79.ee5f1e88.js"><link rel="prefetch" href="/blog/assets/js/8.a3bdf67e.js"><link rel="prefetch" href="/blog/assets/js/80.0b0d61f7.js"><link rel="prefetch" href="/blog/assets/js/81.bcb1ed8e.js"><link rel="prefetch" href="/blog/assets/js/82.2c224139.js"><link rel="prefetch" href="/blog/assets/js/83.ceeabf7d.js"><link rel="prefetch" href="/blog/assets/js/84.35c40eba.js"><link rel="prefetch" href="/blog/assets/js/85.8957aac2.js"><link rel="prefetch" href="/blog/assets/js/86.b8f7c097.js"><link rel="prefetch" href="/blog/assets/js/87.2d6b3d45.js"><link rel="prefetch" href="/blog/assets/js/88.123d1fc9.js"><link rel="prefetch" href="/blog/assets/js/89.cb0744bd.js"><link rel="prefetch" href="/blog/assets/js/9.37b9ff2a.js"><link rel="prefetch" href="/blog/assets/js/90.dba0ef5e.js"><link rel="prefetch" href="/blog/assets/js/91.85ac0dcf.js"><link rel="prefetch" href="/blog/assets/js/92.ee2b547f.js"><link rel="prefetch" href="/blog/assets/js/93.4d803fdd.js"><link rel="prefetch" href="/blog/assets/js/94.ba97fcc6.js"><link rel="prefetch" href="/blog/assets/js/95.3f0e9127.js"><link rel="prefetch" href="/blog/assets/js/96.02ade836.js"><link rel="prefetch" href="/blog/assets/js/97.4d713111.js"><link rel="prefetch" href="/blog/assets/js/98.4787ec67.js"><link rel="prefetch" href="/blog/assets/js/99.088a9b4e.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.16f8281e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Jerry 个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/basic/js/index.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/css/index.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/basic/html/index.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/http/index.html" class="nav-link">
+  HTTP
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 系列" class="dropdown-title"><span class="title">Vue 系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue2/index.html" class="nav-link">
+  Vue 2
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vue3/index.html" class="nav-link">
+  Vue 3
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/vue/vuex/index.html" class="nav-link">
+  Vuex
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码精读" class="dropdown-title"><span class="title">源码精读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/snabbdom/index.html" class="nav-link">
+  Snabbdom
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/axios/index.html" class="nav-link">
+  Axios
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/backend/" class="nav-link">
+  技能拓展
+</a></div><div class="nav-item"><a href="/blog/tools/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></div><div class="nav-item"><a href="/blog/about/" class="nav-link">
+  About Me
+</a></div><div class="nav-item"><a href="/blog/jobs/" class="nav-link">
+  ✨内推
+</a></div> <a href="https://github.com/JerryYuanJ/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置大全</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/entry-context.html" class="sidebar-link">entry 和 context</a></li><li><a href="/blog/tools/webpack/output.html" class="sidebar-link">output</a></li><li><a href="/blog/tools/webpack/dev-server.html" class="sidebar-link">devServer</a></li><li><a href="/blog/tools/webpack/performance.html" class="sidebar-link">performance</a></li><li><a href="/blog/tools/webpack/watch.html" class="sidebar-link">watch 和 watchOptions</a></li><li><a href="/blog/tools/webpack/resolve.html" class="sidebar-link">resolve 和 resolveLoader</a></li><li><a href="/blog/tools/webpack/externals.html" aria-current="page" class="active sidebar-link">externals 和 externalsType</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/webpack/externals.html#不用-external-的打包情况" class="sidebar-link">不用 external 的打包情况</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/externals.html#externals-配置" class="sidebar-link">externals 配置</a></li><li class="sidebar-sub-header"><a href="/blog/tools/webpack/externals.html#externalstype-配置" class="sidebar-link">externalsType 配置</a></li></ul></li><li><a href="/blog/tools/webpack/module.html" class="sidebar-link">module</a></li><li><a href="/blog/tools/webpack/optimization.html" class="sidebar-link">optimization</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>优化技巧</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/optimize.html" class="sidebar-link">Webpack优化技巧</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶学习</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/webpack/tappable.html" class="sidebar-link">事件系统的核心 - Tappable</a></li><li><a href="/blog/tools/webpack/hashes.html" class="sidebar-link">hash, chunkhash 和 contenthash</a></li><li><a href="/blog/tools/webpack/loader.html" class="sidebar-link">Webpack Loader</a></li><li><a href="/blog/tools/webpack/plugin.html" class="sidebar-link">Webpack Plugin</a></li></ul></section></li></ul> <div class="adsense-content" data-v-8d82fd90><div style="padding: 2rem" data-v-8d82fd90></div></div></aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="externals-和-externalstype"><a href="#externals-和-externalstype" class="header-anchor">#</a> externals 和 externalsType</h1> <p>当我们打包一个应用的时候，除了业务代码以外，通常还会将一些第三方的库打包进我们最终的 bundle，这就会使得这个 bundle 的体积很大。这个 externals 配置项可以将指定的依赖从我们最终的 bundle 中排除，也就是不打包这些依赖进最终的文件。当然，前提是你要在使用这个 bundle 的环境中提供这些依赖，因为应用运行时需要这些包提供的功能，否则你的应用就挂了。这个选项最常用的场景就是我们使用 cdn 抽离依赖库的时候。本节我们就来看看如何配置这个 externals 选项。</p> <h2 id="不用-external-的打包情况"><a href="#不用-external-的打包情况" class="header-anchor">#</a> 不用 external 的打包情况</h2> <p>在开始介绍之前，我们来看一下不用 externals 配置的情况，以 jQuery 为例，我们需要安装依赖：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> jquery -S
+</code></pre></div><p>接着在 index.js 中使用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> $ <span class="token keyword">from</span> <span class="token string">'jquery'</span>
+
+console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><p>配置 webpack：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  mode<span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
+  entry<span class="token operator">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token string">'Externals'</span><span class="token punctuation">,</span>
+      template<span class="token operator">:</span> <span class="token string">'./index.html'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这时候运行打包命令的话，会发现打包出的体积很大，因为它将整个 jQuery 都打进来了：</p> <p><img src="/blog/assets/img/no_external.659695ef.png" alt="build with no external"></p> <p>很显然，越多的依赖会造成打包文件的增大。这肯定是不好的，接下来我们就来看看如何配置 externals 来避免这个问题。</p> <h2 id="externals-配置"><a href="#externals-配置" class="header-anchor">#</a> externals 配置</h2> <p>在配置之前，我们要确保运行环境中包含对应的依赖。还是以我们的 jQuery 为例，我们需要在 index.html 中引入它：</p> <div class="language-html extra-class"><div class="highlight-lines"><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ie=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>测试external<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>湖人总冠军<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>这样就在运行时的环境中提供了 jQuery 了。我们再来看配置。它支持字符串、字符串数组、正则、函数和对象五种形式的配置。</p> <h3 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h3> <p>这是最简单的一种配置类型：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 省略其它</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    jquery<span class="token operator">:</span> <span class="token string">'jQuery'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>其中 jquery 这个键表示的是我们在代码中引用的名称，也就是 <code>import $ from 'jquery'</code> 中的 jquery；而 &quot;jQuery&quot; 这个值则是我们运行环境提供的，我们知道在 script 标签中引入 jQuery 的话，会在全局环境上添加一个 jQuery 和 $ 的变量，所以这里的值写 &quot;jQuery&quot; 或者 &quot;$&quot; 都可以。</p> <p>我们来看一下打包结果：</p> <p><img src="/blog/assets/img/external_string.12f63d04.png" alt="build with external"></p> <p>肉眼可见的减小了体积。我们打开 html 文件看看能不能正常运行：</p> <p><img src="/blog/assets/img/external_string_result.be4b8770.png" alt="build with external result"></p> <p>没有问题！控制台正常输出了调用了 jQuery 方法的文本。</p> <p>这里要补充一个知识点。这个被排除的依赖，也就是我们的 externals 中配置的，可以以这几种形式存在：</p> <ul><li>root：作为全局变量</li> <li>commonjs：CommonJS 模块</li> <li>commonjs2：与 CommonJS 类似但是导出的是 <code>module.exports.default</code></li> <li>umd：umd 模块</li></ul> <p>当使用字符串配置的时候，默认是 root 的形式，通俗的理解就是，我这个 jquery 已经在全局变量中存在了，你就不需要把它打进你的 bundle 里啦。</p> <p>如果你想指定其它的形式，你可以加上对应的名称，比如你要将 <code>fs-extra</code> 这个包从输出文件中排除，然后在运行时引入，你可以这么配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'fs-extra'</span><span class="token operator">:</span> <span class="token string">'commonjs2 fs-extra'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="字符串数组"><a href="#字符串数组" class="header-anchor">#</a> 字符串数组</h3> <p>这种形式可以让你只使用某个 commonjs 模块中的某个子集，比如我想要 math 模块中的 subtract 对象，可以这么配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    subtract<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'./math'</span><span class="token punctuation">,</span> <span class="token string">'subtract'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>这个栗子会被转成类似这样的代码：<code>require('./math').subtract</code>。这个配置我们不常用。</p> <h3 id="正则"><a href="#正则" class="header-anchor">#</a> 正则</h3> <p>这个也很简单，满足正则的依赖就不会被打包了：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">//...</span>
+  externals<span class="token operator">:</span> <span class="token regex">/^(jquery|\$)$/i</span> <span class="token comment">// 排除了 jquery（不分大小写） 和 $</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="对象"><a href="#对象" class="header-anchor">#</a> 对象</h3> <p>配置成对象形式都有个前提，那就是你的 output.libraryTarget 的值必须是 'umd'，不然不起作用。</p> <p>我们以 lodash 为例：</p> <p>修改 index.js：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> _ <span class="token keyword">from</span> <span class="token string">'lodash'</span>
+
+console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token constant">VERSION</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>修改配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ... </span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    libraryTarget<span class="token operator">:</span> <span class="token string">'umd'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lodash<span class="token operator">:</span> <span class="token punctuation">{</span>
+      commonjs2<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+      commonjs<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+      amd<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+      root<span class="token operator">:</span> <span class="token string">'_'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>看一下结果：</p> <p><img src="/blog/assets/img/external_obj.fc7ee885.png" alt="build with external obj"></p> <p>也是可以正常的排除掉 lodash 这个包的。</p> <h3 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h3> <p>使用函数可以更灵活的配置。这个函数接受三个参数：</p> <ul><li><p>context：包含 import 语句的文件所在目录。字符串类型。</p></li> <li><p>request：import 的包的路径。字符串类型。</p></li> <li><p>callback：一个函数用来决定需不需要排除这个依赖的打包。它也有三个参数：</p> <ul><li><p>error：在排除这个依赖时的错误信息。</p></li> <li><p>result：用来描述这个外部模块。</p></li> <li><p>type：如果没有在 result 中指定这个模块类型的话，可以用这个参数来指定，它是可选的。</p></li></ul></li></ul> <p>看上去有点复杂，我们来看几个栗子：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token function-variable function">externals</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span> request<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'jquery'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 排除 jquery 的打包</span>
+      <span class="token comment">// 注意这里的 jQuery 要是全局环境下的变量</span>
+      <span class="token keyword">return</span> <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'jQuery'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 正常处理</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这个会检查我们的 request 是否包含 jquery，包含的话就不打包它进 bundle。这就是将上面的字符串形式的改写成了函数形式的写法，我们也可以使用 callback 的第三个参数，来指定 jquery 模块的类型：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token function-variable function">externals</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span> request<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'jquery'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 排除 jquery 的打包</span>
+      <span class="token keyword">return</span> <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'jQuery'</span><span class="token punctuation">,</span> <span class="token string">'root'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 正常处理</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>打包结果都与之前配置都 string 形式都一样：</p> <p><img src="/blog/assets/img/external_func.881b29f4.png" alt="build with external func"></p> <p>你可以指定 result 为 object 类型的：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">context<span class="token punctuation">,</span> request<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// The external is a UMD module</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        root<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+        commonjs<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+        commonjs2<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+        amd<span class="token operator">:</span> <span class="token string">'_'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="组合使用"><a href="#组合使用" class="header-anchor">#</a> 组合使用</h3> <p>上述五种类型的配置都可以一起使用，这时候你的 externals 要是一个数组，每一项都可以是不同的配置。我们基于上面两个栗子做个修改：</p> <p>先改一下 index.js：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> $ <span class="token keyword">from</span> <span class="token string">'jquery'</span>
+<span class="token keyword">import</span> _ <span class="token keyword">from</span> <span class="token string">'lodash'</span>
+
+console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token constant">VERSION</span><span class="token punctuation">)</span>
+</code></pre></div><p>再合并配置到一起：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    libraryTarget<span class="token operator">:</span> <span class="token string">'umd'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      lodash<span class="token operator">:</span> <span class="token punctuation">{</span>
+        commonjs<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+        amd<span class="token operator">:</span> <span class="token string">'lodash'</span><span class="token punctuation">,</span>
+        root<span class="token operator">:</span> <span class="token string">'_'</span><span class="token punctuation">,</span>
+        commonjs2<span class="token operator">:</span> <span class="token string">'lodash'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> request<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'jquery'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'jQuery'</span><span class="token punctuation">,</span> <span class="token string">'root'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>打包后体积依旧很小：</p> <p><img src="/blog/assets/img/external_both.3311228d.png" alt="build with both"></p> <p>运行代码，一切正常：</p> <p><img src="/blog/assets/img/external_both_result.17ac924e.png" alt="build with both result"></p> <h2 id="externalstype-配置"><a href="#externalstype-配置" class="header-anchor">#</a> externalsType 配置</h2> <p>这个属性是 webpack5 新增的，它是与 externals 同级的配置。它的作用主要是用来指定 external 的包的默认类型，但是有个限制：jsonp，amd，umd，system 这四种类型要求 output.libraryTarget 设置成相同的值。比如，如果你 externalsType 设置为 umd 的话，那么你的 output.libraryTarget 也必须是 umd，不然不起作用。它支持的所有类型如下：</p> <ul><li>var（默认值）</li> <li>module</li> <li>assign</li> <li>this</li> <li>window</li> <li>self</li> <li>global</li> <li>commonjs</li> <li>commonjs-module</li> <li>amd</li> <li>amd-require</li> <li>umd</li> <li>umd2</li> <li>jsonp</li> <li>system</li> <li>promise</li> <li>import</li> <li>script</li></ul> <p>这些不同的类型会对打包生成的文件有不同的影响，主要在引入这些外部包的时候会有差异，我们来看几个栗子。</p> <h3 id="window"><a href="#window" class="header-anchor">#</a> window</h3> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lodash<span class="token operator">:</span> <span class="token string">'_'</span><span class="token punctuation">,</span>
+    jquery<span class="token operator">:</span> <span class="token string">'jQuery'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externalsType<span class="token operator">:</span> <span class="token string">'window'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>打包出的 main.js 中，可以看一下两个外部包的情况：</p> <p><img src="/blog/assets/img/external_type_window.f3501ed2.png" alt="external type window"></p> <p>可以看到，是直接的使用挂在 window 上的 lodash 和 jQuery。</p> <h3 id="promise"><a href="#promise" class="header-anchor">#</a> promise</h3> <p>它其实跟默认值 var 类似，但是获取这些外部包的方式不同。配置成 var 的时候，是直接引入的；而使用 promise 的话，会异步的引入：</p> <p><img src="/blog/assets/img/external_type_promise.46388ed7.png" alt="external type promise"></p> <p>可以看到 <code>await Promise.all([lodash__WEBPACK_IMPORTED_MODULE_1__, jquery__WEBPACK_IMPORTED_MODULE_0__]))</code>，说明是异步的等外部包加载完了再去执行。</p> <h3 id="script"><a href="#script" class="header-anchor">#</a> script</h3> <p>这个属性很有用，有了它我们引用 cdn 的外部包的时候，就方便多了。设置了 externalsType 为 script 的话，你的 externals 里面的外部包都要是一个 url 地址，webpack 会根据你这个 url 生成一个 script 标签来引用这个库，当这个库被加载完的时候，这个 script 标签会被自动的删除。我们改写一下上面的栗子：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+    externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lodash<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js'</span><span class="token punctuation">,</span> <span class="token string">'_'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    jquery<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'</span><span class="token punctuation">,</span> <span class="token string">'jQuery'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  externalsType<span class="token operator">:</span> <span class="token string">'script'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>再删掉 html 中我们自己加的两个 script。</p> <p>运行打包的话，我们可以在 main.js 中发现相关的处理代码：</p> <p><img src="/blog/assets/img/external_type_script.ea195571.png" alt="external type script"></p> <p>你也可以指定只使用库中的某一个方法：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  externalsType<span class="token operator">:</span> <span class="token string">'script'</span><span class="token punctuation">,</span>
+  externals<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lodash<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js'</span><span class="token punctuation">,</span> <span class="token string">'_'</span><span class="token punctuation">,</span> <span class="token string">'join'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>使用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> join <span class="token keyword">from</span> <span class="token string">'lodash'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>_<span class="token punctuation">.</span><span class="token function">head</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>但是我们都引入一个库了，只用它的一个方法未免太不划算了，而且 <code>import join from 'lodash';</code> 这样的方式会让人误解。所以这种方式我们也尽量避免去使用。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">9/12/2020, 4:24:25 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/tools/webpack/resolve.html" class="prev">
+        resolve 和 resolveLoader
+      </a></span> <span class="next"><a href="/blog/tools/webpack/module.html">
+        module
+      </a>
+      →
+    </span></p></div> <div class="adsense-content" data-v-5abe131a><div style="padding: 2rem 2rem 1rem 2rem" data-v-5abe131a></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.1af4f67e.js" defer></script><script src="/blog/assets/js/14.69f023c0.js" defer></script><script src="/blog/assets/js/2.40c089a4.js" defer></script><script src="/blog/assets/js/4.5e22228f.js" defer></script>
+  </body>
+</html>
