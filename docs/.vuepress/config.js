@@ -1,5 +1,6 @@
 module.exports = {
   dest: 'dist',
+  base: '/blog/',
   title: 'Jerry 个人博客',
   description: 'Jerry\'s blog',
   // temp: '.temp',
