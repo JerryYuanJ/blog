@@ -12,7 +12,7 @@ hero:
       link: /docs/tools/snabbdom
     - theme: alt
       text: About me
-      link: /about
+      link: /docs/about
 
 features:
   - title: 前端基础
