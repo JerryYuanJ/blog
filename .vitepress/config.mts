@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Jerry's Blog",
   description: 'Jerry Blog',
+  ignoreDeadLinks: 'localhostLinks',
   base: '/blog/',
   themeConfig: {
     nav: [
