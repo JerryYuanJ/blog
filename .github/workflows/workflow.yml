@@ -1,27 +1,36 @@
-name: Deploy Blog App
+# .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - "master"
+    branches: ['main'] # 监听 main 分支的推送
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
+    permissions:
+      contents: write # 允许写入
+      pages: write # 启用 Pages 部署
+      id-token: write # 启用 OIDC
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-      
-      - name: Install and build
-        run: npm install && npm run docs:build
-      
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run docs:build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .vitepress/dist
+          keep_files: false # 清理旧文件
